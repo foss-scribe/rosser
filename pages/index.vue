@@ -7,9 +7,11 @@
   
       <!-- <BooksWidget /> -->
 
-      <div class="text-center my-6">
-        <ContentDoc />
-      </div>
+    <div class="surface-card p-4 shadow-2 border-round">
+        <div class="border-2 border-surface surface-border border-round mt-3 p-4">
+            <ContentDoc />
+        </div>
+    </div>
 
      
   
