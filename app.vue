@@ -8,6 +8,7 @@
 
 
 <script setup>
+umTrackView().then(res => console.log(res.ok));
 </script>
 
 <style>

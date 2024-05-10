@@ -26,4 +26,10 @@ export default defineNuxtConfig({
       include: '*',
     }
   },
+  extends: ['nuxt-umami'],
+  appConfig: {
+    umami: {
+      version: 2
+    }
+  }
 })
