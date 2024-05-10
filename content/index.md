@@ -1,3 +1,9 @@
+---
+title: 'Under construction'
+head:
+    title: "Chris Rosser | Home"
+---
+
 # Under construction
 
 After shutting down my members area, I've decided to rebuild my site in [Nuxt](https://nuxt.com) to make it easier for me to maintain and improve upon.
