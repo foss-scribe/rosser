@@ -2,6 +2,7 @@
 title: 'Under construction'
 head:
     title: "Chris Rosser | Home"
+    description: "Fantasy author, blogger and technical writer."
 ---
 
 # Under construction
