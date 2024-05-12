@@ -19,7 +19,12 @@ Tasks:
 - [x] Add [reading list](/reading)
 - [ ] Add The Codex of Destiny book page
 - [ ] Update privacy policy
-- [ ] Create the home page (this page)
+- [ ] Create the home page (n progress)
+
+    - [x] Hero
+    - [x] Book list component
+    - [ ] Book progress widget
+
 - [ ] Add a static blog
 - [ ] Add an about page
 
