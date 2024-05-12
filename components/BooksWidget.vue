@@ -1,5 +1,5 @@
 <template>
-    <ContentList :query="books" ">
+    <ContentList :query="books">
       <template #default="{ list }">
         <div class="p-2 md:p-4 lg:p-6 text-center bg">
           <div class="text-6xl heading mb-6">Books by Chris Rosser</div>
