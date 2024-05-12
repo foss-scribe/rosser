@@ -4,12 +4,12 @@
             <div class="text-10xl font-bold mb-1 heading">Chris Rosser</div>
             <p class="mt-1 mb-3 line-height-3 text-center mx-auto text-5xl" style="max-width:500px">Fantasy Author</p>
         </div>
-      </div>
+    </div>
 
       <BooksWidget />
 
-    <div class="surface-card p-4 shadow-2 border-round">
-        <div class="border-2 border-surface surface-border border-round mt-3 p-4">
+    <div class="surface-card p-6 shadow-2 border-round">
+        <div class="border-2 border-surface surface-border border-round p-4">
             <ContentDoc />
         </div>
     </div>
