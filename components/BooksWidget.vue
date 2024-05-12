@@ -13,12 +13,6 @@
             </div>
           </div>
         </div>
-        
-        <!-- <h2>
-            <NuxtLink :to="book._path">{{ book.title }}</NuxtLink>
-        </h2>
-        <p>{{ book._path }}</p> -->
-        <!-- <pre>{{ book }}</pre> -->
       </template>
     </ContentList>
 </template>
