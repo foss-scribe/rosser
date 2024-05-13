@@ -9,7 +9,7 @@
     <section class="p-2 md:p-6">
         <ContentRenderer :value="data">
         <section class="grid">
-            <div v-for="book in sortBooks(data.books)" class="col-12 xl:col-3 lg:col-4 md:col-6">
+            <div v-for="book in sortBooks(data.books)" class="col-12 md:col-6 lg:col-4">
                 <div class="flex flex-row w-full gap-3 p-3 border-round border-1 surface-border  surface-card">
                     <div v-if="book.cover" class="relative">
                         <img :src="book.cover" alt="" height="250" class="border-round" :height="196" />

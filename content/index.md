@@ -24,7 +24,8 @@ Tasks:
 
     - [x] Hero
     - [x] Book list component
-    - [ ] Book progress widget
+    - [x] Book progress widget
+    - [x] Reading progress widget
 
 - [ ] Add a static blog
 - [ ] Add an about page
