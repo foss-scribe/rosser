@@ -13,14 +13,14 @@ You can still find my [reading list](/reading), landing pages for my books, or y
 
 Over the coming days (hopefully not weeks), I'll rebuild this home page and more...
 
-Tasks:
+Todo:
 
-- [x] Add [Cadoc's Contract book page](/books/cadocs-contract)
-- [x] Add [Mistress of Skeinhold book page](/books/mistress-of-skeinhold)
+- [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
+- [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
 - [x] Add [reading list](/reading)
-- [ ] Add The Codex of Destiny book page
+- [ ] Add _The Codex of Destiny_ book page
 - [ ] Update privacy policy
-- [ ] Create the home page (n progress)
+- [ ] Create the home page (in progress)
 
     - [x] Hero
     - [x] Book list component
