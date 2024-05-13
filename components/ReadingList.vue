@@ -16,12 +16,10 @@
                         <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 0, 0, 0.75); backdrop-filter: blur(10px); top: 3%; left: 3%;">{{ book.status }}</p>
                     </div>
                     <div class="flex flex-column w-full gap-3">
-                        <div class="flex w-full justify-content-between align-items-center flex-wrap gap-3">
-                            <p class="font-semibold text-lg mt-0 mb-0">{{ book.title }}<br />by {{ book.author }}</p>
-                            <Rating v-if="book.rating" v-model="book.rating" :stars="5" readonly :cancel="false" class="flex-shrink-0"></Rating>
-                            <ProgressBar v-if="book.status == 'currently-reading'" :value="book.progress"></ProgressBar>
-                        </div>
-                        <div>{{ book.description }}</div>
+                        <div class="font-semibold text-lg mt-0 mb-0">{{ book.title }}<br />by {{ book.author }}</div>
+                        <Rating v-if="book.rating" v-model="book.rating" :stars="5" readonly :cancel="false" class="flex-shrink-0"></Rating>
+                        <ProgressBar v-if="book.status == 'currently-reading'" :value="book.progress"></ProgressBar>
+                        <div class="flex-grow-1">{{ book.description }}</div>
                         <div class="flex gap-1">
                             <div v-if="book.amazon">
                                 <NuxtLink :to="book.amazon" target="_blank">
