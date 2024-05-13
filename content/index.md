@@ -5,9 +5,9 @@ head:
     description: "Fantasy author, blogger and technical writer."
 ---
 
-# Under construction
+# Now
 
-After shutting down my members area, I've decided to rebuild my site in [Nuxt](https://nuxt.com) to make it easier for me to maintain and improve upon.
+After shutting down my members area, I'm rebuilding my site in [Nuxt](https://nuxt.com) to make it easier to maintain and improve upon.
 
 You can still find my [reading list](/reading), landing pages for my books, or you can find my writing on [Medium](https://medium.com/@chrisrosser) and [Substack](https://chrisrosser.substack.com/).
 
@@ -32,4 +32,5 @@ Todo:
 
 
 Best,
+
 Chris R
