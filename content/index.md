@@ -1,36 +1,14 @@
 ---
-title: 'Under construction'
+title: 'Chris Rosser'
 head:
     title: "Chris Rosser | Home"
     description: "Fantasy author, blogger and technical writer."
 ---
 
-# Now
+# Hey there, I'm Chris
 
-After shutting down my members area, I'm rebuilding my site in [Nuxt](https://nuxt.com) to make it easier to maintain and improve upon.
+I am a writer (creative and technical) and developer. I've maintained this website through various incarnations since 2007, sharing my stories, reviews and thoughts. I live in Melbourne with my wife, three kids and two cats.
 
-You can still find my [reading list](/reading), landing pages for my books, or you can find my writing on [Medium](https://medium.com/@chrisrosser) and [Substack](https://chrisrosser.substack.com/).
+Feel free to browse my site. You'll find my books, [reading list](/reading), what I'm doing [now](/now), and a list of things I [use](/uses). I used to maintain a large blog here, but after much soul-searching I've moved that to [Medium](https://medium.com/@chrisrosser), and my newsletter to [Substack](https://chrisrosser.substack.com/).
 
-Over the coming days (hopefully not weeks), I'll rebuild this home page and more...
-
-Todo:
-
-- [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
-- [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
-- [x] Add [reading list](/reading)
-- [ ] Add _The Codex of Destiny_ book page
-- [ ] Update privacy policy
-- [ ] Create the home page (in progress)
-
-    - [x] Hero
-    - [x] Book list component
-    - [x] Book progress widget
-    - [x] Reading progress widget
-
-- [ ] Add a static blog
-- [ ] Add an about page
-
-
-Best,
-
-Chris R
+Nominally, I'm a fantasy author (or at least, I'm trying to be), and I've published two novellas with more to come (I hope). I've also dabbled in sci-fi, contemporary thrillers and historical fiction. I blog about writing, technology and productivity.
