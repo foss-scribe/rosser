@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-column">
+  <main class="flex flex-col">
     <SiteNav />
     <NuxtPage />
     <SiteFooter />

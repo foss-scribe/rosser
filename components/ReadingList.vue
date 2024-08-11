@@ -6,38 +6,32 @@
         <p class="mt-1 mb-3 line-height-3 text-center mx-auto" style="max-width:500px">Affiliate links in use.</p>
     </div>
 
-    <section class="p-2 md:p-6">
+    <section v-if="data" class="p-2 md:p-6">
         <ContentRenderer :value="data">
-        <section class="grid">
-            <div v-for="book in sortBooks(data.books)" class="col-12 md:col-6 lg:col-4">
-                <div class="flex flex-row w-full gap-3 p-3 border-round border-1 surface-border  surface-card">
-                    <div v-if="book.cover" class="relative">
-                        <img :src="book.cover" alt="" height="250" class="border-round" :height="196" />
-                        <p class="absolute px-2 py-1 border-round-lg text-sm font-normal text-white mt-0 mb-0" style="background-color: rgba(255, 0, 0, 0.75); backdrop-filter: blur(10px); top: 3%; left: 3%;">{{ book.status }}</p>
-                    </div>
-                    <div class="flex flex-column w-full gap-3">
-                        <div class="font-semibold text-lg mt-0 mb-0">{{ book.title }}<br />by {{ book.author }}</div>
-                        <Rating v-if="book.rating" v-model="book.rating" :stars="5" readonly :cancel="false" class="flex-shrink-0"></Rating>
-                        <ProgressBar v-if="book.status == 'currently-reading'" :value="book.progress"></ProgressBar>
-                        <div class="flex-grow-1">{{ book.description }}</div>
-                        <div class="flex gap-1">
-                            <div v-if="book.amazon">
-                                <NuxtLink :to="book.amazon" target="_blank">
-                                    <Button icon="pi pi-amazon" text />
-                                </NuxtLink>
-                            </div>
-                            <div v-if="book.apple">
-                                <NuxtLink :to="book.apple" target="_blank">
-                                    <Button icon="pi pi-apple" text />
-                                </NuxtLink>
+
+            <div class="grid grid-cols-4 gap-3">
+                <div v-for="book in sortBooks(data.books)" class="card card-side bg-base-100 shadow-xl">
+                        
+                    <figure v-if="book.cover" class="h-auto max-w-xs">
+                        <img
+                            :src="book.cover"
+                            :alt="`${book.title} book cover`"
+                            :title="`${book.title} book cover`"
+                        />
+                    </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">{{ book.title }}</h2>
+                            <div class="badge badge-primary">{{ book.status }}</div>
+                            
+                            <progress v-if="book.status == 'currently-reading'"  class="progress w-56" :value="book.progress" max="100"></progress>
+                            <!-- <div>{{ book.description }}</div> -->
+                            <div class="card-actions justify-end">
+                                <!-- <button class="btn btn-primary">Watch</button> -->
                             </div>
                         </div>
-                        
                     </div>
-                </div>
             </div>
-        </section>
-    </ContentRenderer>
+        </ContentRenderer>
     </section>
     
 </template>

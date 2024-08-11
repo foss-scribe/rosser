@@ -1,7 +1,7 @@
 <template>
-    <div class="surface-card px-4 py-8 md:px-6 lg:px-8">
-        <div class="border-top-1 border-300 pt-5 text-center">
-            <img src="~/assets/images/logo.webp" alt="Image" height="72" />
+    <div class="border-t-2 px-4 py-8 md:px-6 lg:px-8">
+        <div class="pt-5 text-center">
+            <img src="~/assets/images/logo.webp" alt="Chris Rosser Logo" height="72" />
             <ul class="list-none p-0 mx-0 my-5 flex justify-content-center flex-column align-items-center lg:flex-row">
                 <li>
                     <!-- <NuxtLink to="/about" class="text-600 cursor-pointer line-height-3 lg:mr-5">
