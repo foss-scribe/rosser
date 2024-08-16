@@ -15,7 +15,7 @@
             <li>
                 <details>
                     <summary class="text-xl">Books</summary>
-                    <ul class="bg-base-100 rounded-t-none p-0">
+                    <ul class="bg-base-100 rounded-t-none p-0" style="min-width: 400px;">
                         <li>
                             <NuxtLink to="/books/cadocs-contract">
                                 Cadoc's Contract

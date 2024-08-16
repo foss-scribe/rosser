@@ -21,6 +21,7 @@ Todo:
 - [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
 - [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
 - [x] Add [reading list](/reading)
+- [x] Migrate to TailwindCSS
 - [x] Create the home page
 
     - [x] Hero

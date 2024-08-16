@@ -1,11 +1,11 @@
 <template>
     <ContentList :query="books">
       <template #default="{ list }">
-        <div class="p-2 md:p-4 lg:p-6 text-center bg">
+        <div class="p-2 md:p-12 text-center bg">
           <div class="text-6xl heading mb-6">Books by Chris Rosser</div>
-          <div class="flex justify-content-evenly flex-wrap">
-            <div v-for="book in list" :key="book._path">
-              <div class="">
+          <div class="grid grid-cols-12 gap-6 p-2 md:p-12">
+            <div v-for="book in list" :key="book._path" class="col-span-12 md:col-span-6">
+              <div class="p-2 md:p-12">
                 <NuxtLink :to="book._path">
                   <img :src="`/images/books/${book.cover}`"  class="hover:border-red-500 border-round border-2 border-white w-full h-auto" />
                 </NuxtLink>

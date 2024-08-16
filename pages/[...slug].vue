@@ -1,6 +1,6 @@
 <template>
   <ContentDoc v-slot="{doc}">
-      <article class="surface-section px-4 py-8 md:px-6 lg:px-8">
+      <article class="p-12">
           <h1 class="border-teal-600 font-medium text-6xl p-3 mb-3 text-900" style="border-left: 8px solid">{{ doc.title }}</h1>
           
           <div class="text-600 text-sm mb-3">
@@ -11,9 +11,18 @@
               <span> | {{ doc.readingTime.text }} </span>
           </div>
           <div class="mb-5">
-              <Tag v-for="tag in doc.tags" :value="tag" class="mr-2"></Tag>
+              <span v-for="tag in doc.tags" class="badge badge-accent">{{ tag }}</span>
           </div>
-          <ContentRenderer :value="doc" class="text-lg line-height-3" />
+          <ContentRenderer :value="doc" class="p2 md:p-12">
+            <div class="grid grid-cols-12 gap-6 items-start">
+              <article class="col-span-12 md:col-span-8 p-2 md:p-12">
+                <ContentRendererMarkdown :value="doc" />
+              </article>
+              <aside class="col-span-12 md:col-span-4 p-2 md:p-12">
+                <PageToc />
+              </aside>
+            </div>
+          </ContentRenderer>
       </article>
   </ContentDoc>
 </template>

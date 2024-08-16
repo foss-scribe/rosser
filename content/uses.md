@@ -3,7 +3,7 @@ title: What I use
 date: 2024-05-27
 head:
     title: "Chris Rosser | What I use"
-    description: "The hardware, software and services I use as a creative writer and developer."
+    description: "The hardware, software, and services I use as a creative writer and developer."
 ---
 
 ## Hardware
@@ -20,23 +20,32 @@ head:
 
 ## Software
 
-* VS Code
-* Python and JavaScript
+### Writing prose
+
 * Ulysses
 * Scrivener (less so these days)
 * Vellum
+
+### Writing code
+
+* VS Code
+* NeoVim
+* Python and JavaScript
+
+### Art
+
 * Pixelmator Pro
 * Procreate
 
 ## Services
 
-* DigitalOcean
+* ~~DigitalOcean~~
 * BinaryLane
 * Netlify
 * Fly.io
 * AWS
 * GitHub
 * Grammarly
-* Canva Pro (disclaimer, I work for Canva)
+* Canva Pro (disclaimer: I work for Canva)
 * Medium
 * Substack

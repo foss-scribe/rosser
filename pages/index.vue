@@ -8,14 +8,14 @@
 
       <BooksWidget />
 
-      <div class="flex flex-column md:flex-row p-2 md:p-6 gap-2 md:gap-6">
-        <CurrentlyWritingWidget class="flex-grow-1" />
-        <CurrentlyReadingWidget class="flex-grow-1" />
+      <div class="grid grid-cols-12 gap-6 p-2 md:p-12">
+        <CurrentlyWritingWidget class="col-span-6" />
+        <CurrentlyReadingWidget class="col-span-6" />
       </div>
       
 
-    <div class="p-6">
-        <div class="surface-card border-2 border-surface surface-border border-round p-4">
+    <div class="p-2 md:p-12">
+        <div class="border-2 border-md p-2 md:p-12">
             <ContentDoc />
         </div>
     </div>

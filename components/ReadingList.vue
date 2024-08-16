@@ -6,7 +6,7 @@
         <p class="mt-1 mb-3 line-height-3 text-center mx-auto" style="max-width:500px">Affiliate links in use.</p>
     </div>
 
-    <section v-if="data" class="p-2 md:p-6">
+    <section v-if="data" class="p-2 md:p-12">
         <ContentRenderer :value="data">
 
             <div class="grid grid-cols-4 gap-3">
