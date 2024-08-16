@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
   content: {
-    documentDriven: false,
+    documentDriven: true,
     markdown: {
       remarkPlugins: ['remark-reading-time', 'remark-gfm']
     }
