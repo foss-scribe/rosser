@@ -5,7 +5,7 @@
             <div class="grid grid-cols-12 p-2 md:p-12 gap-6 items-start">
 
                 <div class="p-2 md:p-12 col-span-12 md:col-span-4 text-center  bg-black bg-opacity-60 rounded-md">
-                    <img :src="`/images/books/${doc.cover}`" class="rounded-md border-2 border-warning w-full h-auto" />
+                    <img :src="`/images/books/${doc.cover}`" class="rounded-md border-2 w-full h-auto" />
                     <p class="text-lg font-bold my-4">Available at all good ebook retailers.</p>
                     <div class="grid grid-cols-2 gap-4">
                         <button v-for="link in doc.buy_links" class="btn btn-outline">
