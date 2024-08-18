@@ -3,7 +3,7 @@ title: What I'm doing now
 head:
     title: "Chris Rosser | Now"
     description: "What I'm working on now."
-date: 2024-05-01
+date: 2024-08-18
 ---
 
 _This is a [now](https://nownownow.com/about) page. Last updated 27/05/2024._
@@ -21,7 +21,6 @@ Todo:
 - [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
 - [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
 - [x] Add [reading list](/reading)
-- [x] Migrate to TailwindCSS
 - [x] Create the home page
 
     - [x] Hero
@@ -29,7 +28,8 @@ Todo:
     - [x] Book progress widget
     - [x] Reading progress widget
     - [x] Welcome widget
-    
+
+- [ ] Migrate to TailwindCSS (in progress)    
 - [ ] Add _The Codex of Destiny_ book page
 - [ ] Update privacy policy
 - [ ] Add a static blog

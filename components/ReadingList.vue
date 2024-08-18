@@ -9,31 +9,41 @@
     <section v-if="data" class="p-2 md:p-12">
         <ContentRenderer :value="data">
 
-            <div class="grid grid-cols-4 gap-3">
-                <div v-for="book in sortBooks(data.books)" class="card card-side bg-base-100 shadow-xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
+                <div v-for="book in sortBooks(data.books)" class="card bg-base-100 shadow-xl">
+                    <NuxtLink :to="book.amazon" target="_blank">
                         
-                    <figure v-if="book.cover" class="h-auto max-w-xs">
+                    <figure v-if="book.cover" class="h-auto static">
+                        <div class="absolute bottom-0 right-0 rounded-md">
+                            <div class="badge badge-primary">
+                                <span v-if="book.status == 'read'">Read</span>
+                                <span v-else-if="book.status == 'currently-reading'">Reading now</span>
+                                <span v-else>
+                                    {{ book.status }}
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <progress v-if="book.status == 'currently-reading'"  class="progress progress-primary w-full" :value="book.progress" max="100"></progress>
                         <img
                             :src="book.cover"
                             :alt="`${book.title} book cover`"
                             :title="`${book.title} book cover`"
                         />
+                        
                     </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">{{ book.title }}</h2>
-                            <div class="badge badge-primary">{{ book.status }}</div>
-                            
-                            <progress v-if="book.status == 'currently-reading'"  class="progress w-56" :value="book.progress" max="100"></progress>
-                            <!-- <div>{{ book.description }}</div> -->
-                            <div class="card-actions justify-end">
-                                <!-- <button class="btn btn-primary">Watch</button> -->
-                            </div>
-                        </div>
+                    <div v-else class="card-body">
+                        <h2 class="card-title">{{ book.title }}</h2>
+                        <div class="badge badge-primary">{{ book.status }}</div>
+                        
+                        
+                        <!-- <div>{{ book.description }}</div> -->
                     </div>
+                    </NuxtLink>
+                </div>
             </div>
         </ContentRenderer>
     </section>
-    
 </template>
 
 <script setup>
