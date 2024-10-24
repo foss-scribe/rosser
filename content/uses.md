@@ -8,6 +8,7 @@ head:
 
 ## Hardware
 
+* Custom PC running Linux
 * 2020 MacBook Pro &ndash; the last Intel model (16,2)
 * 12.9 inch iPad Pro
 * iPhone 13 Mini
