@@ -21,6 +21,7 @@ Todo:
 - [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
 - [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
 - [x] Add [reading list](/reading)
+- [x] Update privacy policy
 - [x] Create the home page
 
     - [x] Hero
@@ -31,7 +32,7 @@ Todo:
 
 - [ ] Migrate to TailwindCSS (in progress)    
 - [ ] Add _The Codex of Destiny_ book page
-- [ ] Update privacy policy
+
 - [ ] Add a static blog
 - [ ] Add an about page
 
@@ -46,4 +47,4 @@ I'm working on a website for my local taekwondo club.
 
 ## Reading
 
-Reading took a back seat for years while I was writing, but I'm trying hard to read more again.
+Reading took a back seat for years while I was writing, but I'm trying [hard to read more again](/reading).
