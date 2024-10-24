@@ -32,7 +32,6 @@ Todo:
 
 - [ ] Migrate to TailwindCSS (in progress)    
 - [ ] Add _The Codex of Destiny_ book page
-
 - [ ] Add a static blog
 - [ ] Add an about page
 
