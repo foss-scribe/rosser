@@ -11,7 +11,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
                 <div v-for="book in sortBooks(data.books)" class="card bg-base-100 shadow-xl">
-                    <NuxtLink :to="book.amazon" target="_blank">
+                    <NuxtLink :to="book.medium == 'audiobook' ? book.apple : book.amazon" target="_blank">
                         
                     <figure v-if="book.cover" class="h-auto static">
                         <div class="absolute bottom-0 right-0 rounded-md">
