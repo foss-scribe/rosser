@@ -9,16 +9,17 @@
       <BooksWidget />
 
       <div class="grid grid-cols-12 gap-6 p-2 md:p-12">
-        <CurrentlyWritingWidget class="col-span-12 md:col-span-6" />
-        <CurrentlyReadingWidget class="col-span-12 md:col-span-6" />
-      </div>
-      
-
-    <div class="p-2 md:p-12">
-        <div class="border-2 border-md p-2 md:p-12">
-            <ContentDoc />
+        <div class="col-span-12 md:col-span-6">
+            <CurrentlyWritingWidget class="mb-6" />
+            <CurrentlyReadingWidget />
         </div>
-    </div>
+        <div class="col-span-12 md:col-span-6">
+            <div class="border-2 border-md p-2 md:p-12">
+                <ContentDoc />
+            </div>
+        </div>
+        
+      </div>
     
 </template>
 
