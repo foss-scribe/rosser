@@ -1,8 +1,8 @@
 <template>
     <div class="mb-5 hero">
         <div class="p-8 text-center">
-            <div class="text-10xl font-bold mb-1 heading">Chris Rosser</div>
-            <p class="mt-1 mb-3 line-height-3 text-center mx-auto text-5xl" style="max-width:500px">Fantasy Author</p>
+            <div class="text-6xl md:text-9xl font-bold mb-1 heading">Chris Rosser</div>
+            <p class="mt-1 mb-3 line-height-3 text-center mx-auto text-4xl md:text-6xl" style="max-width:500px">Fantasy Author</p>
         </div>
     </div>
 
