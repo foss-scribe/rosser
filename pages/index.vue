@@ -9,8 +9,8 @@
       <BooksWidget />
 
       <div class="grid grid-cols-12 gap-6 p-2 md:p-12">
-        <CurrentlyWritingWidget class="col-span-6" />
-        <CurrentlyReadingWidget class="col-span-6" />
+        <CurrentlyWritingWidget class="col-span-12 md:col-span-6" />
+        <CurrentlyReadingWidget class="col-span-12 md:col-span-6" />
       </div>
       
 
