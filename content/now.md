@@ -22,6 +22,8 @@ Todo:
 - [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
 - [x] Add [reading list](/reading)
 - [x] Update privacy policy
+- [x] Add an about page
+- [x] Migrate to TailwindCSS 
 - [x] Create the home page
 
     - [x] Hero
@@ -30,10 +32,10 @@ Todo:
     - [x] Reading progress widget
     - [x] Welcome widget
 
-- [ ] Migrate to TailwindCSS (in progress)    
+
 - [ ] Add _The Codex of Destiny_ book page
 - [ ] Add a static blog
-- [ ] Add an about page
+
 
 
 ## Writing

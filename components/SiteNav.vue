@@ -30,6 +30,7 @@
                 </details>
             </li>
         </ul> -->
+        <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>
         <NuxtLink to="/books" class="btn btn-ghost text-xl">Books</NuxtLink>
         <NuxtLink to="/reading" class="btn btn-ghost text-xl">Reading List</NuxtLink>
         <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink>
@@ -56,6 +57,7 @@
 <div v-if="showMobileMenu">
     <div class="flex flex-col">
         <NuxtLink to="/" class="btn btn-ghost text-xl">Home</NuxtLink>
+        <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>
         <NuxtLink to="/books" class="btn btn-ghost text-xl">Books</NuxtLink>
         <NuxtLink to="/reading" class="btn btn-ghost text-xl">Reading List</NuxtLink>
         <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink>
