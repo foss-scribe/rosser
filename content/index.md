@@ -7,7 +7,7 @@ head:
 
 ## Hey there, I'm Chris 
 
-I am a writer (creative and technical) and developer. I've maintained this website through various incarnations since 2007, sharing my stories, reviews, and thoughts. I live in Melbourne with my wife, three kids, and two cats.
+I am a writer (creative and technical) and full-stack web developer. I've maintained this website through various incarnations since 2007, sharing my stories, reviews, and thoughts. I live in Melbourne with my wife, three kids, and two cats.
 
 Feel free to browse my site\*. You'll find my books, [reading list](/reading), what I'm doing [now](/now), and what I [use](/uses). I used to maintain a large blog here, but after much soul-searching, I've moved that to [Medium](https://medium.com/@chrisrosser), and my newsletter to [Substack](https://chrisrosser.substack.com/).
 
