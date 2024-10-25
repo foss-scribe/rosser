@@ -2,10 +2,10 @@
 
 <NuxtLink to="/reading">
     <div v-if="data" class="surface-card p-6 shadow-2 border-round border-2 border-surface surface-border">
-        <div class="text-4xl font-bold mb-4">What I'm reading</div>
+        <div class="text-3xl md:text-4xl font-bold mb-4">What I'm reading</div>
         <div v-for="book in getReadingNow(data)" class="mb-4">
             <div class="font-semibold text-lg mt-0 mb-0">{{ book.title }}<br />by {{ book.author }}</div>
-            <progress class="progress w-56" :value="book.progress" max="100"></progress>
+            <progress class="progress w-full" :value="book.progress" max="100"></progress>
         </div>
     </div>
 </NuxtLink>

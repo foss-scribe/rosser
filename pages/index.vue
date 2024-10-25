@@ -41,9 +41,6 @@ h1, h2, h3, h4, h5, h6, .heading {
     font-family: "IM Fell English SC" !important;
 }
 
-.text-10xl {
-    font-size: 7rem;
-}
 .hero {
     background-image: url("/images/hero-bg.webp");
     background-position: center;
