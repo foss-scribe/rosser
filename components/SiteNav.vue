@@ -11,7 +11,7 @@
   </div>
   <div class="flex-1">
     <div class="flex-none hidden md:block">
-        <ul class="menu menu-horizontal px-1">
+        <!-- <ul class="menu menu-horizontal px-1">
             <li>
                 <details>
                     <summary class="text-xl">Books</summary>
@@ -29,7 +29,8 @@
                     </ul>
                 </details>
             </li>
-        </ul>
+        </ul> -->
+        <NuxtLink to="/books" class="btn btn-ghost text-xl">Books</NuxtLink>
         <NuxtLink to="/reading" class="btn btn-ghost text-xl">Reading List</NuxtLink>
         <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink>
         <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost text-xl">Substack</NuxtLink>
