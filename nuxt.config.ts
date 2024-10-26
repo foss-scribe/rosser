@@ -21,5 +21,8 @@ export default defineNuxtConfig({
     umami: {
       version: 2
     }
+  },
+  routeRules: {
+    '/posts/2018/08/11/review-omnioutliner/': { redirect: 'https://chrisrosser.medium.com/omnioutliner-review-68bd3b1e5735'}
   }
 })
