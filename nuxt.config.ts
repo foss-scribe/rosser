@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         driver: 'github',
         repo: "foss-scribe/alashiya",
         branch: "master",
-        content: "/docs"
+        dir: "docs"
       }
     }
   },
