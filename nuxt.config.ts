@@ -14,6 +14,15 @@ export default defineNuxtConfig({
     documentDriven: true,
     markdown: {
       remarkPlugins: ['remark-reading-time', 'remark-gfm']
+    },
+    sources: {
+      alashiya: {
+        prefix: '/worlds/alashiya',
+        driver: 'github',
+        repo: "foss-scribe/alashiya",
+        branch: "master",
+        content: "/docs"
+      }
     }
   },
   extends: ['nuxt-umami'],
