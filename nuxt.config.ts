@@ -16,6 +16,13 @@ export default defineNuxtConfig({
       remarkPlugins: ['remark-reading-time', 'remark-gfm']
     },
     sources: {
+      blog: {
+        prefix: '/blog',
+        driver: 'github',
+        repo: "foss-scribe/crnet-blog",
+        branch: "master",
+        dir: "posts"
+      },
       alashiya: {
         prefix: '/worlds/alashiya',
         driver: 'github',

@@ -11,27 +11,9 @@
   </div>
   <div class="flex-1">
     <div class="flex-none hidden md:block">
-        <!-- <ul class="menu menu-horizontal px-1">
-            <li>
-                <details>
-                    <summary class="text-xl">Books</summary>
-                    <ul class="bg-base-100 rounded-t-none p-0" style="min-width: 400px;">
-                        <li>
-                            <NuxtLink to="/books/cadocs-contract">
-                                Cadoc's Contract
-                            </NuxtLink>
-                        </li>
-                        <li>
-                            <NuxtLink to="/books/mistress-of-skeinhold">
-                                Mistress of Skeinhold
-                            </NuxtLink>
-                        </li>
-                    </ul>
-                </details>
-            </li>
-        </ul> -->
-        <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>
         <NuxtLink to="/books" class="btn btn-ghost text-xl">Books</NuxtLink>
+        <NuxtLink to="/blog" class="btn btn-ghost text-xl">Blog</NuxtLink>
+        <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>
         <NuxtLink to="/reading" class="btn btn-ghost text-xl">Reading List</NuxtLink>
         <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink>
         <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost text-xl">Substack</NuxtLink>
@@ -57,8 +39,9 @@
 <div v-if="showMobileMenu">
     <div class="flex flex-col">
         <NuxtLink to="/" class="btn btn-ghost text-xl">Home</NuxtLink>
-        <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>
         <NuxtLink to="/books" class="btn btn-ghost text-xl">Books</NuxtLink>
+        <NuxtLink to="/blog" class="btn btn-ghost text-xl">Blog</NuxtLink>
+        <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>     
         <NuxtLink to="/reading" class="btn btn-ghost text-xl">Reading List</NuxtLink>
         <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink>
         <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost text-xl">Substack</NuxtLink>

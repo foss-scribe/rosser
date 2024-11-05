@@ -6,48 +6,21 @@ head:
 date: 2024-08-18
 ---
 
-_This is a [now](https://nownownow.com/about) page. Last updated 27/05/2024._
+_This is a [now](https://nownownow.com/about) page. Last updated 05/11/2024._
 
-## ChrisRosser.net redesign
+## Writing and world-building
 
-After shutting down my members area, I'm rebuilding my site in [Nuxt](https://nuxt.com) to make it easier to maintain and improve upon.
+After a long hiatus in which I was preoccupied with work, family commitments and taekwondo, I'm slowly getting back into writing.
 
-You can still find my [reading list](/reading), landing pages for my books, or you can find my writing on [Medium](https://medium.com/@chrisrosser) and [Substack](https://chrisrosser.substack.com/).
+I've decided to start with some creative world-building, fleshing out my setting for the [_The Codex of Destiny_](/books/codex-of-destiny), which I'll [publish here](/worlds/alashiya).
 
-Todo:
-
-- [x] Add a _now_ page
-- [x] Add a _what I use_ page.
-- [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
-- [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
-- [x] Add [_The Codex of Destiny_](/books/codex-of-destiny) book page
-- [x] Add [_A Shade of Flesh and Bone_](/books/shade-flesh-bone) book page
-- [x] Add [reading list](/reading)
-- [x] Update privacy policy
-- [x] Add an [about page](/about)
-- [x] Migrate to TailwindCSS and DaisyUI
-- [x] Create the home page
-
-    - [x] Hero
-    - [x] Book list component
-    - [x] Book progress widget
-    - [x] Reading progress widget
-    - [x] Welcome widget
-
-
-
-- [ ] Add a static blog
-- [ ] Add worlds sections
-
-
-
-## Writing
-
-Currently on-hold while I juggle work, family life and taekwondo.
+Once I've made some inroads and found me feet with the setting and characters I'll return to writing the _The Codex of Destiny_.
 
 ## Development
 
 I'm working on a website for my local taekwondo club.
+
+The [rebuild and redesign](/blog/2024-11-05-redesign) of my website in Nuxt and TailwindCSS is mostly complete, though I'll continue to tweak the design and components as I publish more posts and world-building content. 
 
 ## Reading
 
