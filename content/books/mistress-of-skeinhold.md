@@ -4,6 +4,7 @@ tagline: Fame has its price.
 subtitle: A novella of the Weaver Cycle
 banner: book-bg-mistress.webp
 cover: cover-mos.webp
+order: 2
 head:
     title: Chris Rosser | Mistress of Skeinhold
 buy_links:

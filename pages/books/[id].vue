@@ -6,13 +6,18 @@
 
                 <div class="p-2 md:p-12 col-span-12 md:col-span-4 text-center  bg-black bg-opacity-60 rounded-md">
                     <img :src="`/images/books/${doc.cover}`" class="rounded-md border-2 w-full h-auto" />
-                    <p class="text-lg font-bold my-4">Available at all good ebook retailers.</p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <button v-for="link in doc.buy_links" class="btn btn-outline">
-                            <NuxtLink  :to="link.url" target="_blank" >
-                                {{ link.label }}
-                            </NuxtLink>
-                        </button>
+                    <div v-if="doc.buy_links">
+                        <p class="text-lg font-bold my-4">Available at all good ebook retailers.</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button v-for="link in doc.buy_links" class="btn btn-outline">
+                                <NuxtLink  :to="link.url" target="_blank" >
+                                    {{ link.label }}
+                                </NuxtLink>
+                            </button>
+                        </div>
+                    </div>
+                    <div v-else>
+                        <p class="text-lg font-bold my-4">Coming soon to all good ebook retailers.</p>
                     </div>
                 </div>
 
@@ -27,7 +32,7 @@
                         <p v-for="text in doc.body.children" class="text-2xl px-6 leading-8 mb-6">{{ text.children[0].value }}</p>
                     </div>
 
-                    <div>
+                    <div v-if="doc.reviews">
                         <div class="text-4xl mb-6 text-center heading"> Praise for {{ doc.title }}</div>
 
                         <div class="carousel w-full body-text">

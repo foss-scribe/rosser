@@ -20,10 +20,12 @@ Todo:
 - [x] Add a _what I use_ page.
 - [x] Add [_Cadoc's Contract_ book page](/books/cadocs-contract)
 - [x] Add [_Mistress of Skeinhold_ book page](/books/mistress-of-skeinhold)
+- [x] Add [_The Codex of Destiny_](/books/codex-of-destiny) book page
+- [x] Add [_A Shade of Flesh and Bone_](/books/shade-flesh-bone) book page
 - [x] Add [reading list](/reading)
 - [x] Update privacy policy
-- [x] Add an about page
-- [x] Migrate to TailwindCSS 
+- [x] Add an [about page](/about)
+- [x] Migrate to TailwindCSS and DaisyUI
 - [x] Create the home page
 
     - [x] Hero
@@ -33,8 +35,9 @@ Todo:
     - [x] Welcome widget
 
 
-- [ ] Add _The Codex of Destiny_ book page
+
 - [ ] Add a static blog
+- [ ] Add worlds sections
 
 
 
