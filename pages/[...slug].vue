@@ -1,7 +1,9 @@
 <template>
   <ContentDoc v-slot="{doc}">
       <article class="p-2 md:p-12">
-          <h1 class="border-teal-600 font-medium text-6xl p-3 mb-3 text-900" style="border-left: 8px solid">{{ doc.title }}</h1>
+          <h1 class="border-teal-600 font-medium text-6xl p-3 mb-3 text-900" style="border-left: 8px solid">
+            {{ doc.title }}
+          </h1>
           
           <div class="text-600 text-sm mb-3">
               <span>Published </span>
