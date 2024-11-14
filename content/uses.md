@@ -9,8 +9,8 @@ head:
 ## Hardware
 
 * Custom PC running Linux
-* 2020 MacBook Pro &ndash; the last Intel model (16,2)
-* 12.9 inch iPad Pro
+* MacBook Pro
+* iPad Pro
 * iPhone 13 Mini
 * [Nuphy Air 96 V2 with Gateron low-profile Brown switches](https://amzn.to/3wP0hPS)
 * [Belkin Thunderbolt 3 Dock Pro](https://amzn.to/3QZVstM)
@@ -47,6 +47,6 @@ head:
 * AWS
 * GitHub
 * Grammarly
-* Canva Pro (disclaimer: I work for Canva)
+* Canva
 * Medium
 * Substack
