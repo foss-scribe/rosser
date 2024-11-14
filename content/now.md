@@ -3,7 +3,7 @@ title: What I'm doing now
 head:
     title: "Chris Rosser | Now"
     description: "What I'm working on now."
-date: 2024-08-18
+date: 2024-11-14
 ---
 
 _This is a [now](https://nownownow.com/about) page. Last updated 05/11/2024._
