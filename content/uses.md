@@ -8,8 +8,7 @@ head:
 
 ## Hardware
 
-* Custom PC running Linux
-* MacBook Pro
+* MacBook Pro (16 inch, M3 Pro)
 * iPad Pro
 * iPhone 13 Mini
 * [Nuphy Air 96 V2 with Gateron low-profile Brown switches](https://amzn.to/3wP0hPS)
