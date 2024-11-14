@@ -17,6 +17,8 @@ head:
 * 2 [Dell S2722QC](https://amzn.to/4dXE82A) displays
 * [Behringer UMC202HD](https://amzn.to/4ea8mj5) and [XM8500](https://amzn.to/3wSMV58)
 * Kobo Libra 2
+* Custom built gaming PC running Linux and Windows
+
 
 ## Software
 
