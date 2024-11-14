@@ -1,6 +1,6 @@
 ---
 title: What I use
-date: 2024-05-27
+date: 2024-11-14
 head:
     title: "Chris Rosser | What I use"
     description: "The hardware, software, and services I use as a creative writer and developer."
