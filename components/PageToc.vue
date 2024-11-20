@@ -6,6 +6,9 @@ const { toc } = useContent()
   <div>
     <ul v-if="toc && toc.links">
       <li v-for="link in toc.links" :key="link.text">
+        <a :href="`#${link.id}`">
+          {{ link.text }}
+        </a>
         <ul v-if="link.children">
             <li v-for="child in link.children">
                 <a :href="`#${child.id}`">
@@ -13,9 +16,7 @@ const { toc } = useContent()
                 </a>
             </li>
         </ul>
-        <a v-else :href="`#${link.id}`">
-          {{ link.text }}
-        </a>
+       
       </li>
     </ul>
   </div>
