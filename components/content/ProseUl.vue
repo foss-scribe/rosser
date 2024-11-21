@@ -1,5 +1,5 @@
 <template>
-    <ul class="text-xl text-primary">
+    <ul class="text-xl text-primary list-disc ml-12 mb-2">
       <slot />
     </ul>
   </template>
@@ -8,8 +8,6 @@
 
 ul {
     font-family: "Crimson Text";
-    list-style-type: disc;
-    margin: 1rem;
 
 }
 
