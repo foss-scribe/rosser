@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     markdown: {
-      remarkPlugins: ['remark-reading-time', 'remark-gfm']
+      remarkPlugins: ['remark-reading-time', 'remark-gfm', 'remark-smartypants']
     },
     sources: {
       blog: {

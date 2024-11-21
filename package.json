@@ -15,7 +15,8 @@
     "nuxt": "^3.12.4",
     "nuxt-umami": "^2.6.4",
     "remark-gfm": "^4.0.0",
-    "remark-reading-time": "^2.0.1"
+    "remark-reading-time": "^2.0.1",
+    "remark-smartypants": "^3.0.2"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.12.1",
