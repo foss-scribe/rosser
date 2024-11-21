@@ -734,13 +734,13 @@
         "kobo": "",
         "medium": "audiobook",
         "pages": "681",
-        "progress": 60,
+        "progress": 0,
         "published": "2013",
         "rating": 5,
         "review": "",
         "series": "The Riftwar Saga",
         "series_no": "1",
-        "status": "currently-reading",
+        "status": "read",
         "title": "Magician"
     },
     {
