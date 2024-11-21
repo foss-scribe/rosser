@@ -1,26 +1,40 @@
 <template>
-      <ContentList :path="props.path" v-slot="{ list }">
-        <div  class="grid grid-cols-1 md:grid-cols-4 gap-4">
-
-          <div v-for="article in list" :key="article._path" class="card bg-base-100 image-full shadow-xl">
-            <!-- <figure>
-                <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="Shoes" />
-            </figure> -->
-            <div class="card-body">
+      <ContentList :query="query" v-slot="{ list }">
+        <div  class="grid grid-cols-1 md:grid-cols-4 gap-4 px-12">
+          
+          <div v-for="article in list" :key="article._path">
+          <NuxtLink :to="article._path">
+            <div class="card bg-base-100 image-full shadow-xl">
+              <div class="card-body">
                 <h2 class="card-title">{{ article.title }}</h2>
                 <p>{{ article.description }}</p>
-                <pre>{{ article.description }}</pre>
+              </div>
             </div>
+          </NuxtLink>
+            
+  
           </div>
         </div>
-        <pre>{{ list }}</pre>
-      </ContentList>
+    </ContentList>
+
+
   </template>
   
-<script setup>
+<script setup lang="ts">
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 const props = defineProps(['path'])
+
+
+const query: QueryBuilderParams = { 
+    path: props.path,
+    where: [
+      { _file: {$regex : `/index.md` } },
+      { _file: {$ne : `${props.path.slice(1)}/index.md`}}
+    ],
+    // limit: 5, 
+    sort: [{ title: 1 }] 
+  }
+
 
 </script>
