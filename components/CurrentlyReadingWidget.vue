@@ -29,8 +29,7 @@ function getReadingNow(data) {
 
 onMounted(() => {
 
-        console.log(data.value)
-        books.value = getReadingNow(data.value)
+    books.value = getReadingNow(data.value)
 
 })
 </script>

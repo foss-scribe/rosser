@@ -2,6 +2,7 @@
 title: Worlds
 head:
     title: Chris Rosser | Worlds
+    description: Worlds by Chris Rosser.
 date: 2024-11-05
 ---
 

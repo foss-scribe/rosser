@@ -1,7 +1,6 @@
 <template>
       <ContentList :query="query" v-slot="{ list }">
         <div  class="grid grid-cols-1 md:grid-cols-4 gap-4 px-12">
-          
           <div v-for="article in list" :key="article._path">
           <NuxtLink :to="article._path">
             <div class="card bg-base-100 image-full shadow-xl">
@@ -11,8 +10,6 @@
               </div>
             </div>
           </NuxtLink>
-            
-  
           </div>
         </div>
     </ContentList>
