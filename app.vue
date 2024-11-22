@@ -1,6 +1,7 @@
 <template>
   <main class="flex flex-col">
     <SiteNav />
+    <BreadCrumbs />
     <NuxtPage />
     <SiteFooter />
   </main>
