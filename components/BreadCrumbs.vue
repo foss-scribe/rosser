@@ -1,5 +1,5 @@
 <template>
-    <div v-if="getBreadcrumbs().length > 1" class="breadcrumbs text-sm">
+    <div v-if="getBreadcrumbs().length > 1" class="breadcrumbs text-sm ml2 md:ml-6">
         <ul>
             <li>
                 <NuxtLink to="/">Home</NuxtLink>
