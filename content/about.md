@@ -14,8 +14,8 @@ I’ve been a technical writer for twenty years, and a full-stack web developer 
 
 Long ago, I earned my bachelor’s degree with honours in archaeology and history and then a master’s degree in editing and communication. I have a lifelong interest in philosophy, the classics, history, language, and technology.
 
-I’m an avid martial artist, and practice taekwondo and boxing 6 days a week. I also hold belts in Gōjū-ryū and Shōtōkan Karate, and Brazilian Jui Jitsu.
+I’m an avid martial artist, and practice taekwondo and boxing. I also hold belts in Gōjū-ryū and Shōtōkan Karate, and Brazilian Jui Jitsu.
 
 I live in Melbourne, Australia, with my wife, three children and two cats.
 
-You can find me on [Substack](https://chrisrosser.substack.com) and [Medium](https://chrisrosser.medium.com).
+You can find me on [Substack](https://chrisrosser.substack.com) and [Medium](https://chrisrosser.medium.com), but I don't use social media.
