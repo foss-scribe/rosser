@@ -16,6 +16,6 @@ Long ago, I earned my bachelor’s degree with honours in archaeology and histor
 
 I’m an avid martial artist, and practice taekwondo and boxing. I also hold belts in Gōjū-ryū and Shōtōkan Karate, and Brazilian Jui Jitsu.
 
-I live in Melbourne, Australia, with my wife, three children and two cats.
+Originally from Wales, I emigrated to Australia as a child. I live in Melbourne, Australia, with my wife, three children and two cats.
 
 You can find me on [Substack](https://chrisrosser.substack.com) and [Medium](https://chrisrosser.medium.com), but I don't use social media.
