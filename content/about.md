@@ -14,7 +14,7 @@ I've been a technical writer for twenty years, and a full-stack web developer fo
 
 Long ago, I earned my bachelor's degree with honours in archaeology and history and then a master's degree in editing and communication. I have a lifelong interest in philosophy, the classics, history, language, and technology.
 
-I'm an avid martial artist, and practice taekwondo and boxing. I also hold belts in Gōjū-ryū and Shōtōkan Karate, and Brazilian Jui Jitsu.
+I'm an avid, practising martial artist with belts in Taekwondo, Boxing, Karate (Gōjū-ryū and Shōtōkan), and Brazilian Jui Jitsu.
 
 Originally from Wales, I emigrated to Australia as a child. I live in Melbourne, Australia, with my wife, three children and two cats.
 
