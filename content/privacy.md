@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 head:
     title: "Chris Rosser | Privacy Policy"
 description: Privacy policy
-date: 2024-10-24  16:00:00
+date: 2024-12-23  16:00:00
 tags: ['privacy']
 ---
 
@@ -53,7 +53,7 @@ As my site allows access to and collects data from citizens of the United Kingdo
 
 ## Children's Privacy
 
-My website is not intended to be viewed by anyone under 18. I do not knowingly collect data from children, and should I learn if this has happened, I will immediately remove their data from my services and terminate their account.
+My website is not intended to be viewed by anyone under the age of 18. I do not knowingly or intentionally collect data from children, and should I learn if this has happened, I will immediately remove their data from my services and terminate their account.
 
 ## What I collect
 
@@ -65,7 +65,7 @@ Umami's privacy policy can be [read here](https://umami.is/privacy).
 
 A cookie is a small piece of data stored on your device by the websites you visit.
 
-While I limit the presence of third-party cookies, my CDN of choice, Cloudflare injects [some cookies](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/) into you browser. Additionally, some of my pages and blog posts may contain them as a result of embedding widgets such as Twitter posts and Amazon Kindle reading previews.
+While I limit the presence of third-party cookies, my CDN of choice, Cloudflare injects [some cookies](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/) into your browser. Additionally, some of my pages and blog posts may contain them as a result of embedding widgets such as Twitter posts and Amazon Kindle reading previews.
 
 
 ## Changes
@@ -78,6 +78,7 @@ You can direct any question about this privacy policy to support@chrisrosser.net
 
 ## Update log
 
+* 2024-12-23 Minor corrections.
 * 2024-10-24 Move to Umami cloud and removal of Scriptorium, Stripe and Mailgun.
 * 2023-06-07 Server moved from DigitalOcean to an Australian-based host.
 * 2022-02-15 Cove.chat removed as a third-party service.
