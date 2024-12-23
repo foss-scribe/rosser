@@ -6,13 +6,7 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-    "nuxt-seo-utils"
-  ],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxtjs/sitemap', "nuxt-seo-utils", '@nuxt/image'],
   content: {
     documentDriven: true,
     markdown: {
@@ -34,6 +28,9 @@ export default defineNuxtConfig({
         dir: "docs"
       }
     }
+  },
+  image: {
+    provider: 'netlify',
   },
   extends: ['nuxt-umami'],
   appConfig: {
