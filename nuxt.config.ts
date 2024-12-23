@@ -6,7 +6,13 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/robots'],
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    "nuxt-seo-utils"
+  ],
   content: {
     documentDriven: true,
     markdown: {
