@@ -8,7 +8,7 @@ Features:
 
 * Reading list built from a single JSON file
 * Analytics (Umami)
-* UI built with Vue, PrimeVue and PrimeFlex
+* UI built with Vue, TailwindCSS and DaisyUI
 * Deploys to Netlify
 
 Very much a work in progress
