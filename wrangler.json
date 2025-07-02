@@ -1,7 +1,0 @@
-{
-    "name": "rosser-web",
-    "compatibility_date": "2025-07-01",
-	    "assets": {
-	      "directory": "./dist"
-	    }
- }
