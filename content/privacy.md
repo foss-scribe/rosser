@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 head:
     title: "Chris Rosser | Privacy Policy"
 description: Privacy policy
-date: 2024-12-23  16:00:00
+date: 2025-07-20  10:30:00
 tags: ['privacy']
 ---
 
@@ -18,7 +18,7 @@ Privacy is important to me. Yes, that's easy to say and harder to prove, but I h
 I adhere to the following principles:
 
 * Your data is yours, not mine, nor does it belong to big tech and media companies.
-* I collect and use only the information I need to run my website and membership business.
+* I collect and use only the information I need to run my website.
 * I put privacy before profit.
 * I never sell personal information.
 * When I delete data, it's gone for good.
@@ -65,12 +65,12 @@ Umami's privacy policy can be [read here](https://umami.is/privacy).
 
 A cookie is a small piece of data stored on your device by the websites you visit.
 
-While I limit the presence of third-party cookies, my CDN of choice, Cloudflare injects [some cookies](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/) into your browser. Additionally, some of my pages and blog posts may contain them as a result of embedding widgets such as Twitter posts and Amazon Kindle reading previews.
+While I limit the presence of third-party cookies, my hosting provider and CDN of choice, Cloudflare injects [some cookies](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/) into your browser. Additionally, some of my pages and blog posts may contain them as a result of embedding widgets such as Twitter posts and Amazon Kindle reading previews.
 
 
 ## Changes
 
-I reserve the right to update this privacy policy at any time. I will notify you about any change using your registered email within 24 hours.
+I reserve the right to update this privacy policy at any time. Changes are tracked in my [site's GitHub repository](https://github.com/foss-scribe/rosser/blob/master/content/privacy.md).
 
 ## Questions
 
@@ -78,6 +78,7 @@ You can direct any question about this privacy policy to support@chrisrosser.net
 
 ## Update log
 
+* 2025-07-20 Minor corrections.
 * 2024-12-23 Minor corrections.
 * 2024-10-24 Move to Umami cloud and removal of Scriptorium, Stripe and Mailgun.
 * 2023-06-07 Server moved from DigitalOcean to an Australian-based host.
