@@ -2,7 +2,7 @@
 title: About Chris Rosser
 head:
     title: "Chris Rosser | About"
-    description: "About Chris Rosser, author, technical writer and developing living in Melbourne, Australia"
+    description: "About Chris Rosser, author, technical writer and developer living in Melbourne, Australia"
 date: 2025-07-20
 ---
 
