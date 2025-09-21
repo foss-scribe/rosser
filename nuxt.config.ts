@@ -43,5 +43,5 @@ export default defineNuxtConfig({
     '/posts/2021/04/27/how-to-create-a-parchment-background-in-procreate/' : { redirect: 'https://chrisrosser.medium.com/how-to-create-a-parchment-background-in-procreate-f1517b129215'},
     '/posts/2020/04/15/how-to-create-a-paperback-with-apple-pages/': { redirect: 'https://chrisrosser.substack.com/p/how-to-create-a-paperback-with-apple'}
   },
-  nitro: { preset: 'netlify' }
+  nitro: { preset: 'cloudflare_pages' }
 })
