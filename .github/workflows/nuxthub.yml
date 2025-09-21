@@ -31,4 +31,4 @@ jobs:
         uses: nuxt-hub/action@v2
         with:
           project-key: rosser-wd92
-          output-directory: .output/public
+          output-directory: dist
