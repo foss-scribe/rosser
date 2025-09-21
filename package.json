@@ -23,6 +23,7 @@
     "remark-smartypants": "^3.0.2"
   },
   "devDependencies": {
+    "@nuxthub/core": "^0.9.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@primevue/nuxt-module": "^4.0.0",
     "@tailwindcss/typography": "^0.5.13",
