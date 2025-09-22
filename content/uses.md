@@ -1,6 +1,6 @@
 ---
 title: What I use
-date: 2024-11-14
+date: 2025-09-22
 head:
     title: "Chris Rosser | What I use"
     description: "The hardware, software, and services I use as a creative writer and developer."
@@ -9,45 +9,60 @@ head:
 ## Hardware
 
 * MacBook Pro (16 inch, M3 Pro)
-* iPad Pro
+* 12.9 inch iPad Pro
 * iPhone 13 Mini
-* [Nuphy Air 96 V2 with Gateron low-profile Brown switches](https://amzn.to/3wP0hPS)
 * [Belkin Thunderbolt 3 Dock Pro](https://amzn.to/3QZVstM)
-* [MX Master 3](https://amzn.to/4dXkUKd)
 * 1 [Dell S2722QC](https://amzn.to/4dXE82A) display
 * 2, 27-inch Kogan displays
 * [Behringer UMC202HD](https://amzn.to/4ea8mj5) and [XM8500](https://amzn.to/3wSMV58)
-* Custom built gaming PC running Linux
+* Custom built PC running Linux
+* [SteamDeck Oled](https://amzn.to/46xVYWS)
+* Kobo reader
 
+### Keyboards and mice
+
+* [Keychron K5 Max](https://amzn.to/46sqwt6)
+* [Nuphy Air 96 V2](https://amzn.to/3wP0hPS)
+* [Nuphy Air 75](https://amzn.to/46EY9Iu)
+* [MX Master 3](https://amzn.to/4dXkUKd)
 
 ## Software
 
-### Writing books
+### Writing
 
 * Ulysses
 * Scrivener
-* Vellum
-
-### Writing code
-
+* iA Writer
 * VS Code
-* Python and JavaScript
+
+### Editing
+
+* Grammarly
+* ProWritingAid
 
 ### Art
 
+* Vellum (eBook formatting)
 * Pixelmator Pro
 * Procreate
 
+### Tech Stack
+
+* Python
+* TypeScript
+* VueJS
+* Nuxt
+
+
 ## Services
 
-* ~~DigitalOcean~~
-* ~~BinaryLane~~
 * CloudFlare
-* Netlify
-* Fly.io
 * AWS
 * GitHub
-* Grammarly
 * Canva
 * Medium
 * Substack
+* ~~BinaryLane~~
+* ~~Netlify~~
+* ~~DigitalOcean~~
+* ~~Fly.io~~

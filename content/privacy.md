@@ -74,7 +74,7 @@ I reserve the right to update this privacy policy at any time. Changes are track
 
 ## Questions
 
-You can direct any question about this privacy policy to support@chrisrosser.net.
+You can direct any questions about this privacy policy to support@chrisrosser.net.
 
 ## Update log
 
