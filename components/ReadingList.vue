@@ -14,12 +14,11 @@
                         
                     <figure v-if="book.cover" class="h-auto static">
                         <div class="absolute bottom-0 right-0 rounded-md">
-                            <div class="badge badge-primary">
+                            <div :class="`badge ${getBadgeClass(book.status)}`">
                                 <span v-if="book.status == 'read'">Read</span>
-                                <span v-else-if="book.status == 'currently-reading'">Reading now</span>
-                                <span v-else>
-                                    {{ book.status }}
-                                </span>
+                                <span v-if="book.status == 'currently-reading'">Reading now</span>
+                                <span v-if="book.status == 'to-read'">To read</span>
+                                <span v-if="book.status == 'Did not finish'">Did not finish</span>
                             </div>
                             
                         </div>
@@ -33,7 +32,12 @@
                     </figure>
                     <div v-else class="card-body">
                         <h2 class="card-title">{{ book.title }}</h2>
-                        <div class="badge badge-primary">{{ book.status }}</div>
+                         <div :class="`badge ${getBadgeClass(book.status)}`">
+                                <span v-if="book.status == 'read'">Read</span>
+                                <span v-if="book.status == 'currently-reading'">Reading now</span>
+                                <span v-if="book.status == 'to-read'">To read</span>
+                                <span v-if="book.status == 'Did not finish'">Did not finish</span>
+                            </div>
                         
                     </div>
                     </NuxtLink>
@@ -50,12 +54,23 @@ const { data: readingList } = await useAsyncData('readingList', () => {
     .first()
 })
 
-console.log(readingList.value)
-
 function sortBooks(data) {
     return data.sort((a, b) => {
         return a.status.toLowerCase().localeCompare(b.status.toLowerCase()) || a.author_sort.toLowerCase().localeCompare(b.author_sort.toLowerCase()) || a.published - b.published || a.title.toLowerCase().localeCompare(b.title.toLowerCase()) ;
     })
+}
+
+function getBadgeClass(status) {
+   switch(status) {
+    case 'read':
+        return 'badge-success';
+    case 'currently-reading':
+        return 'badge-warning';
+    case 'to-read':
+        return 'badge-info';
+    default:
+        return 'badge-danger';
+   }
 }
 
 useHead({
