@@ -5,7 +5,7 @@
         <div class="text-3xl md:text-4xl font-bold mb-4">What I'm reading</div>
         <div v-if="readingList && readingList.meta.books.length > 0">
             <div v-for="book in getReadingNow(readingList.meta.books)" class="mb-4">
-                <div class="font-semibold text-lg mt-0 mb-0">{{ book.title }}<br />by {{ book.author }}</div>
+                <div class="font-semibold text-lg mt-0 mb-0 text-primary">{{ book.title }}<br />by {{ book.author }}</div>
                 <progress class="progress w-full" :value="book.progress" max="100"></progress>
             </div>
         </div>
