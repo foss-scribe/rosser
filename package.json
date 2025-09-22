@@ -29,6 +29,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "daisyui": "^4.12.10",
     "nuxt": "^4.1.2",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "wrangler": "^4.38.0"
   }
 }

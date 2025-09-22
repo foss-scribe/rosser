@@ -3,7 +3,7 @@ title: 'Privacy Policy'
 head:
     title: "Chris Rosser | Privacy Policy"
 description: Privacy policy
-date: 2025-07-20  10:30:00
+date: 2025-07-20 10:30:00
 tags: ['privacy']
 ---
 

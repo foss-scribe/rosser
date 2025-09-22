@@ -4,6 +4,7 @@ tagline: Would you take a hundred lives to save your own?
 subtitle: A novella of the Weaver Cycle
 banner: book-bg-cadocs.webp
 cover: cover-cadocs.webp
+type: book
 order: 0
 head:
     title: Chris Rosser | Cadoc's Contract

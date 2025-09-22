@@ -1,6 +1,7 @@
 ---
 title: A Shade of Flesh and Bone
 cover: cover-shade-flesh-bone.webp
+type: book
 order: 2
 head:
     title: Chris Rosser | A Shade of Flesh and Bone

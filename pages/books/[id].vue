@@ -1,15 +1,16 @@
 <template>
-    <ContentDoc v-slot="{ doc }">
-        <div class="bg-cover text-white" :style="{'background-image': `url('/images/books/${doc.banner}')`}">
+    <ContentDoc v-if="doc" :doc="doc">
+        <div class="bg-cover text-white" :style="{'background-image': `url('/images/books/${doc.meta.banner}')`}">
+            <!-- <pre>{{ doc }}</pre> -->
 
             <div class="grid grid-cols-12 p-2 md:p-12 gap-6 items-start">
 
                 <div class="p-2 md:p-12 col-span-12 md:col-span-4 text-center  bg-black bg-opacity-60 rounded-md">
-                    <img :src="`/images/books/${doc.cover}`" class="rounded-md border-2 w-full h-auto" />
-                    <div v-if="doc.buy_links">
+                    <img :src="`/images/books/${doc.meta.cover}`" class="rounded-md border-2 w-full h-auto" />
+                    <div v-if="doc.meta.buy_links">
                         <p class="text-lg font-bold my-4">Available at all good ebook retailers.</p>
                         <div class="grid grid-cols-2 gap-4">
-                            <button v-for="link in doc.buy_links" class="btn btn-outline">
+                            <button v-for="link in doc.meta.buy_links" class="btn btn-outline">
                                 <NuxtLink  :to="link.url" target="_blank" >
                                     {{ link.label }}
                                 </NuxtLink>
@@ -25,11 +26,15 @@
                     <div class="p-2 md:p-12 mb-10">
                         <div class="text-center mb-6">
                             <div class="text-6xl md:text-8xl heading">{{ doc.title }}</div>
-                            <div class="text-2xl mb-4 heading">{{ doc.subtitle }}</div>
-                            <div class="text-2xl md:text-4xl text-red-500 heading p-4">{{ doc.tagline }}</div>
+                            <div class="text-2xl mb-4 heading">{{ doc.meta.subtitle }}</div>
+                            <div class="text-2xl md:text-4xl text-red-500 heading p-4">{{ doc.meta.tagline }}</div>
                         </div>
-                        
-                        <p v-for="text in doc.body.children" class="text-2xl px-6 leading-8 mb-6">{{ text.children[0].value }}</p>
+                        <ContentRenderer :value="doc" class="p2 md:p-12">
+
+                            <ContentRendererMarkdown :value="doc" />
+
+                        </ContentRenderer>
+                        <!-- <p v-for="text in doc.body.value" class="text-2xl px-6 leading-8 mb-6">{{ text.children[0].value }}</p> -->
                     </div>
 
                     <div v-if="doc.reviews">
@@ -58,13 +63,15 @@
 </template>
 
 <script setup lang="ts">
-const {page} = useContent();
+const route = useRoute()
+const { data: doc } = await useAsyncData(route.path, () => {
+    return queryCollection('books').path(route.path).first()
+})
+console.log(doc.value)
 
-useContentHead(page)
-
-function getIconClass(icon) {
-    return `${icon}`
-}
+// function getIconClass(icon) {
+//     return `${icon}`
+// }
 
 </script>
 

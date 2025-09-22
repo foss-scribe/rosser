@@ -1,13 +1,16 @@
 <script setup lang="ts">
-const { toc } = useContent()
+const props = defineProps<{
+  toc: any
+}>()
 </script>
 
 <template>
-  <div>
-    <ul v-if="toc && toc.links">
-      <li v-for="link in toc.links" :key="link.text">
+  <div v-if="props.toc && props.toc.links?.length > 1">
+    <h2 class="text-2xl font-bold mb-3">On this page</h2>
+    <ul v-if="props.toc && props.toc.links">
+      <li v-for="link in props.toc.links" :key="link.text">
         <a :href="`#${link.id}`">
-          {{ link.text }}
+          {{ link.text }} 
         </a>
         <ul v-if="link.children">
             <li v-for="child in link.children">

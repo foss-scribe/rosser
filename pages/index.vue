@@ -6,7 +6,7 @@
         </div>
     </div>
 
-      <BooksWidget />
+      <BooksWidget v-if="books" :books="books" />
 
       <div class="grid grid-cols-12 gap-6 p-2 md:p-12">
         <div class="col-span-12 md:col-span-6">
@@ -14,8 +14,8 @@
             <CurrentlyReadingWidget />
         </div>
         <div class="col-span-12 md:col-span-6">
-            <div class="border-2 border-md p-2 md:p-12">
-                <ContentDoc />
+            <div class="border-2 border-md rounded-md p-2 md:p-12">
+                <ContentRenderer v-if="doc" :value="doc" />
             </div>
         </div>
         
@@ -24,10 +24,16 @@
 </template>
 
 <script setup lang="ts">
+const route = useRoute()
+const { data: doc} = await useAsyncData(route.path, () => {
+    return queryCollection('content').path(route.path).first()
+})
 
-    useHead({
-    title: 'Chris Rosser | Home'
-    })
+const  { data: books } = await useAsyncData('books', () => {
+    return queryCollection('books').all()
+})
+
+console.log(books.value)
 
 </script>
 

@@ -2,6 +2,7 @@
 title: The Codex of Destiny
 cover: cover-codex-of-destiny-bw.webp
 banner: book-bg-codex.webp
+type: book
 order: 5
 head:
     title: Chris Rosser | The Codex of Destiny

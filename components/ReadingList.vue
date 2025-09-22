@@ -5,12 +5,11 @@
         <p class="mt-4 mb-3 line-height-3 text-center mx-auto text-3xl" style="max-width:500px">Books I'm reading, have read and want to read.</p>
         <p class="mt-1 mb-3 line-height-3 text-center mx-auto" style="max-width:500px">Affiliate links in use.</p>
     </div>
+    
+    <section v-if="readingList" class="p-2 md:p-12">
 
-    <section v-if="data" class="p-2 md:p-12">
-        <ContentRenderer :value="data">
-
-            <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
-                <div v-for="book in sortBooks(data.books)" class="card bg-base-100 shadow-xl">
+            <<div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
+                <div v-for="book in sortBooks(readingList.meta.books)" class="card bg-base-100 shadow-xl">
                     <NuxtLink :to="book.medium == 'audiobook' ? book.apple : book.amazon" target="_blank">
                         
                     <figure v-if="book.cover" class="h-auto static">
@@ -36,18 +35,22 @@
                         <h2 class="card-title">{{ book.title }}</h2>
                         <div class="badge badge-primary">{{ book.status }}</div>
                         
-                        
-                        <!-- <div>{{ book.description }}</div> -->
                     </div>
                     </NuxtLink>
                 </div>
             </div>
-        </ContentRenderer>
     </section>
 </template>
 
 <script setup>
-const { data } = await useAsyncData('bookList', () => queryContent('/reading_list').findOne())
+// get all books
+const { data: readingList } = await useAsyncData('readingList', () => {
+  return queryCollection('readingList')
+    .order('title', 'ASC')
+    .first()
+})
+
+console.log(readingList.value)
 
 function sortBooks(data) {
     return data.sort((a, b) => {
