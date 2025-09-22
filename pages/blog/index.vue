@@ -7,21 +7,19 @@
             <ul class="divide-y divide-gray-200 dark:divide-gray-700">
                 <li v-for="post in posts" :key="post._path" class="py-5">
                     <NuxtLink :to="post.path">
-                        <div class="flex justify-between">
-                            <dl>
+                        <div class="flex flex-col md:flex-row items-start md:gap-10">
+                            <dl class="md:w-40">
                                 <dt class="sr-only">Published on</dt>
                                 <dd class="text-base font-medium leading-6">
-                                    <time :dateTime="post.meta.data" suppressHydrationWarning>
-                                        {{ formatDate(post.meta.date) }}
+                                    <time :dateTime="post.date" suppressHydrationWarning>
+                                        {{ formatDate(post.date) }}
                                     </time>
                                 </dd>
                             </dl>
                             <div class="space-y-3">
                                 <div>
                                     <h2 class="text-2xl font-bold leading-8 tracking-tight">
-                                    <a :href="post._path">
                                         {{ post.title }}
-                                    </a>
                                     </h2>
                                     <div class="flex flex-wrap">
                                         {{ post.tags }}
@@ -42,7 +40,9 @@
 <script setup>
 const route = useRoute()
 const {data: posts} = await useAsyncData(route.path, () => {
-    return queryCollection('blog').all()
+    return queryCollection('blog')
+    .order('date', 'DESC')
+    .all()
 })
 
 console.log(posts.value)

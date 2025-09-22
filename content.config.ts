@@ -13,7 +13,8 @@ export default defineContentConfig({
       type: 'page',
       source: 'books/*.md',
        schema: z.object({
-        type: z.string()
+        type: z.string(),
+        order: z.number()
       })
     }),
     readingList: defineCollection({
@@ -39,7 +40,11 @@ export default defineContentConfig({
       source: {
         repository: 'https://github.com/foss-scribe/crnet-blog/tree/master',
         include: "posts/**/*.md",
-      }
+      },
+       schema: z.object({
+        title: z.string(),
+        date: z.string(),
+       })
     }),
     alashiya: defineCollection({
       type: 'page',
