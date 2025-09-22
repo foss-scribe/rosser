@@ -16,24 +16,11 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/tailwindcss',
-    '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
-    "nuxt-seo-utils",
-    '@nuxt/image',
-    '@nuxthub/core'
-  ],
-  image: {
-    provider: 'netlify',
-  },
-  extends: ['nuxt-umami'],
-  appConfig: {
-    umami: {
-      version: 2
-    }
-  },
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxtjs/sitemap', "nuxt-seo-utils", '@nuxt/image', '@nuxthub/core', 'nuxt-umami'],
+  umami: {
+    id: "a235a069-e115-4729-b868-a38dd310ee95",
+    host: "https://my-umami.xyz", 
+  }
   // routeRules: {
   //   '/posts/2018/08/11/review-omnioutliner/': { redirect: 'https://chrisrosser.medium.com/omnioutliner-review-68bd3b1e5735' },
   //   '/posts/2021/04/27/how-to-create-a-parchment-background-in-procreate/': { redirect: 'https://chrisrosser.medium.com/how-to-create-a-parchment-background-in-procreate-f1517b129215' },

@@ -1,13 +1,12 @@
 ---
 title: Mistress of Skeinhold
 tagline: Fame has its price.
+description: Mistress of Skeinhold, by Chris Rosser, is a grim dark novella of the The Weaver Cycle.
 subtitle: A novella of the Weaver Cycle
 banner: book-bg-mistress.webp
 cover: cover-mos.webp
 type: book
 order: 2
-head:
-    title: Chris Rosser | Mistress of Skeinhold
 buy_links:
     -
         label: Amazon US

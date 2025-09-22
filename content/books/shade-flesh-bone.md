@@ -1,6 +1,7 @@
 ---
 title: A Shade of Flesh and Bone
 cover: cover-shade-flesh-bone.webp
+description: A Shade of Flesh of Bone is a grim fantasy novel by Chris Rosser.
 type: book
 order: 2
 head:

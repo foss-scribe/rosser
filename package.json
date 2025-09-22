@@ -17,7 +17,6 @@
     "@nuxtjs/sitemap": "^7.0.0",
     "better-sqlite3": "^12.2.0",
     "nuxt-seo-utils": "^6.0.4",
-    "nuxt-umami": "^2.6.4",
     "remark-gfm": "^4.0.0",
     "remark-reading-time": "^2.0.1",
     "remark-smartypants": "^3.0.2"
@@ -29,6 +28,7 @@
     "@tailwindcss/typography": "^0.5.13",
     "daisyui": "^4.12.10",
     "nuxt": "^4.1.2",
+    "nuxt-umami": "^3.2.0",
     "sass": "^1.77.8",
     "wrangler": "^4.38.0"
   }

@@ -14,7 +14,8 @@ export default defineContentConfig({
       source: 'books/*.md',
        schema: z.object({
         type: z.string(),
-        order: z.number()
+        order: z.number(),
+        description: z.string(),
       })
     }),
     readingList: defineCollection({

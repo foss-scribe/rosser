@@ -1,15 +1,14 @@
 <template>
-    <ContentDoc v-if="doc" :doc="doc">
+    <div v-if="doc">
         <div class="bg-cover text-white" :style="{'background-image': `url('/images/books/${doc.meta.banner}')`}">
-            <!-- <pre>{{ doc }}</pre> -->
 
-            <div class="grid grid-cols-12 p-2 md:p-12 gap-6 items-start">
+            <div class="grid grid-cols-12 p-2 lg:p-12 gap-6 items-start">
 
-                <div class="p-2 md:p-12 col-span-12 md:col-span-4 text-center  bg-black bg-opacity-60 rounded-md">
+                <div class="p-2 lg:p-12 col-span-12 md:col-span-4 text-center  bg-black bg-opacity-60 rounded-md">
                     <img :src="`/images/books/${doc.meta.cover}`" class="rounded-md border-2 w-full h-auto" />
                     <div v-if="doc.meta.buy_links">
                         <p class="text-lg font-bold my-4">Available at all good ebook retailers.</p>
-                        <div class="grid grid-cols-2 gap-4">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                             <button v-for="link in doc.meta.buy_links" class="btn btn-outline">
                                 <NuxtLink  :to="link.url" target="_blank" >
                                     {{ link.label }}
@@ -22,19 +21,14 @@
                     </div>
                 </div>
 
-                <div class="p-2 md:p-12 gap-12 col-span-12 md:col-span-8 bg-black bg-opacity-60 rounded-md">
-                    <div class="p-2 md:p-12 mb-10">
+                <div class="p-2 lg:p-12 gap-12 col-span-12 md:col-span-8 bg-black bg-opacity-60 rounded-md">
+                    <div class="p-2 lg:p-12 mb-10">
                         <div class="text-center mb-6">
-                            <div class="text-6xl md:text-8xl heading">{{ doc.title }}</div>
+                            <div class="text-4xl md:text-6xl heading">{{ doc.title }}</div>
                             <div class="text-2xl mb-4 heading">{{ doc.meta.subtitle }}</div>
                             <div class="text-2xl md:text-4xl text-red-500 heading p-4">{{ doc.meta.tagline }}</div>
                         </div>
-                        <ContentRenderer :value="doc" class="p2 md:p-12">
-
-                            <ContentRendererMarkdown :value="doc" />
-
-                        </ContentRenderer>
-                        <!-- <p v-for="text in doc.body.value" class="text-2xl px-6 leading-8 mb-6">{{ text.children[0].value }}</p> -->
+                        <ContentRenderer :value="doc" class="p-2" />
                     </div>
 
                     <div v-if="doc.reviews">
@@ -59,7 +53,7 @@
                 </div>
             </div>
         </div>
-    </ContentDoc>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -72,6 +66,16 @@ console.log(doc.value)
 // function getIconClass(icon) {
 //     return `${icon}`
 // }
+
+useHead({
+  title: doc.value ? `${doc.value.title} | Chris Rosser` : 'Chris Rosser',
+  meta: [
+    {
+      name: 'description',
+      content: doc.value ? doc.value.description : 'Chris Rosser, author, technical writer and developer living in Melbourne, Australia'
+    }
+  ]
+})
 
 </script>
 

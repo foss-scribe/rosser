@@ -1,13 +1,12 @@
 ---
 title: Cadoc's Contract
+description: Cadoc's Contract, by Chris Rosser, is grim dark fantasy novella and prelude to The Weaver Cycle.
 tagline: Would you take a hundred lives to save your own?
 subtitle: A novella of the Weaver Cycle
 banner: book-bg-cadocs.webp
 cover: cover-cadocs.webp
 type: book
 order: 0
-head:
-    title: Chris Rosser | Cadoc's Contract
 buy_links:
     -
         label: Amazon US

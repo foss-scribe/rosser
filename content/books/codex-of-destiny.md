@@ -1,6 +1,7 @@
 ---
 title: The Codex of Destiny
 cover: cover-codex-of-destiny-bw.webp
+description: The Codex of Destiny is a serialised novella written by Chris Rosser.
 banner: book-bg-codex.webp
 type: book
 order: 5
