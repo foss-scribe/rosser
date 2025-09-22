@@ -1,7 +1,7 @@
 <template>
 
 <NuxtLink to="/reading">
-    <div class="surface-card p-6 shadow-2 border-round border-2 border-surface rounded-md surface-border">
+    <div class="surface-card p-6 shadow-2 border-round border-2 rounded-md">
         <div class="text-3xl md:text-4xl font-bold mb-4">What I'm reading</div>
         <div v-if="readingList && readingList.meta.books.length > 0">
             <div v-for="book in getReadingNow(readingList.meta.books)" class="mb-4">

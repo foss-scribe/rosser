@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   ssr: false,
   app: {
@@ -6,6 +7,12 @@ export default defineNuxtConfig({
       title: 'Chris Rosser'
     }
   },
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
+  },
+  css: ["~/assets/main.css"],
   content: {
     build: {
       markdown: { 
@@ -16,7 +23,14 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxtjs/robots', '@nuxtjs/sitemap', "nuxt-seo-utils", '@nuxt/image', '@nuxthub/core', 'nuxt-umami'],
+  modules: [
+      '@nuxt/content',
+      '@nuxtjs/robots',
+      '@nuxtjs/sitemap',
+      "nuxt-seo-utils",
+      '@nuxt/image',
+      '@nuxthub/core',
+      'nuxt-umami'],
   umami: {
     id: "a235a069-e115-4729-b868-a38dd310ee95",
     host: "https://my-umami.xyz", 

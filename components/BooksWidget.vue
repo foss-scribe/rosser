@@ -7,7 +7,7 @@
             <div v-for="book in props.books" :key="book.path" class="col-span-12 md:col-span-3">
               <div class="p-2 md:p-6">
                 <NuxtLink :to="book.path">
-                  <img :src="`/images/books/${book.meta.cover}`"  class="hover:border-red-500 border-round border-2 border-white w-full h-auto rounded-md" />
+                  <img :src="`/images/books/${book.meta.cover}`"  class="hover:border-primary border-round border-2  w-full h-auto rounded-md" />
                 </NuxtLink>
               </div>
             </div>

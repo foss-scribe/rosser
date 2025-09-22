@@ -4,7 +4,7 @@
 
             <div class="grid grid-cols-12 p-2 lg:p-12 gap-6 items-start">
 
-                <div class="p-2 lg:p-12 col-span-12 md:col-span-4 text-center  bg-black bg-opacity-60 rounded-md">
+                <div class="p-2 lg:p-12 col-span-12 md:col-span-4 text-center  bg-black/60 bg-opacity-60 rounded-md">
                     <img :src="`/images/books/${doc.meta.cover}`" class="rounded-md border-2 w-full h-auto" />
                     <div v-if="doc.meta.buy_links">
                         <p class="text-lg font-bold my-4">Available at all good ebook retailers.</p>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
 
-                <div class="p-2 lg:p-12 gap-12 col-span-12 md:col-span-8 bg-black bg-opacity-60 rounded-md">
+                <div class="p-2 lg:p-12 gap-12 col-span-12 md:col-span-8 bg-black/60 bgopacity-60 rounded-md">
                     <div class="p-2 lg:p-12 mb-10">
                         <div class="text-center mb-6">
                             <div class="text-4xl md:text-6xl heading">{{ doc.title }}</div>
