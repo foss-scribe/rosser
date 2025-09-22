@@ -8,7 +8,7 @@
     
     <section v-if="readingList" class="p-2 md:p-12">
 
-            <<div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
+            <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
                 <div v-for="book in sortBooks(readingList.meta.books)" class="card bg-base-100 shadow-xl">
                     <NuxtLink :to="book.medium == 'audiobook' ? book.apple : book.amazon" target="_blank">
                         
