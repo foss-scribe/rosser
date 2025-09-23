@@ -2,6 +2,7 @@
     <main class="p-2 md:p-12">
         <h1 class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">Blog</h1>
         <p class="text-xl leading-7">Latest posts by Chris Rosser</p>
+        <p>For older posts, visit my <a href="https://archive.chrisrosser.net" target="_blank">archive</a>.</p>
         <div v-if="posts" class="mt-6">
             
             <ul class="divide-y divide-gray-200 dark:divide-gray-700">
