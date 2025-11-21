@@ -1,17 +1,20 @@
 <template>
     <NuxtLink
-      :href="href"
-      :target="target"
-      class="underline text-theme hover:text-primary"
+      :href="props.href"
+      :target="checkLocalLink(props.href) ? '_self' : '_blank'"
+      :class="`text-info hover:text-accent`"
     >
       <slot />
+      <span v-if="!checkLocalLink(props.href)" class="ml-0.5 text-sm">
+        <sup>{{ props.href && !checkLocalLink(props.href) ? '↗' : '' }}</sup>
+      </span>
     </NuxtLink>
   </template>
   
   <script setup lang="ts">
   import type { PropType } from 'vue'
   
-  defineProps({
+  const props = defineProps({
     href: {
       type: String,
       default: ''
@@ -22,6 +25,14 @@
       required: false
     }
   })
+
+  function checkLocalLink(href: string) {
+    if (  href.startsWith('/') || href.startsWith('#') || href.startsWith('.') ) {
+      return true
+    }
+    return false
+  }
+
   </script>
 
 <style scoped>

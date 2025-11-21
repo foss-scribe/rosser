@@ -5,7 +5,7 @@
         <p>For older posts, visit my <a href="https://archive.chrisrosser.net" target="_blank">archive</a>.</p>
         <div v-if="posts" class="mt-6">
             
-            <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+            <ul class="divide-y">
                 <li v-for="post in posts" :key="post._path" class="py-5">
                     <NuxtLink :to="post.path">
                         <div class="flex flex-col md:flex-row items-start md:gap-10">
@@ -46,7 +46,6 @@ const {data: posts} = await useAsyncData(route.path, () => {
     .all()
 })
 
-console.log(posts.value)
 
 </script>
   

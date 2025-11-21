@@ -1,5 +1,5 @@
 <template>
-  <div v-if="page" class="p-2 md:p-12">
+  <div v-if="page" class="p-2 md:p-6 xl:p-12">
     <h1 class="border-teal-600 font-medium text-6xl p-3 mb-3 text-900" style="border-left: 8px solid">
       {{ page.title }}
     </h1>
@@ -16,15 +16,14 @@
       <span v-for="tag in page.meta.tags" class="badge badge-accent">{{ tag }}</span>
     </div>
 
-    <div class="p2 md:p-12">
+    <div class="p-2 md:p-6">
       <div class="grid grid-cols-12 gap-6 items-start">
-        <article class="col-span-12 md:col-span-8 p-2">
-
+        <article :class="`col-span-12 ${page.body.toc.links && page.body.toc.links.length > 1 ? 'md:col-span-8' : null} p-2`">
           <ContentRenderer :value="page" />
-
         </article>
-        <aside class="hidden md:block col-span-12 md:col-span-4 p-2">
+        <aside v-if="page.body.toc.links && page.body.toc.links.length > 1" class="hidden md:block md:col-span-4 p-2">
           <PageToc :toc="page.body.toc" />
+          
         </aside>
       </div>
     </div>

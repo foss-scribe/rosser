@@ -1,5 +1,5 @@
 <template>
-    <p class="text-xl mb-2 text-primary"><slot /></p>
+    <p class="text-xl mb-2"><slot /></p>
   </template>
 
 <style scoped>
