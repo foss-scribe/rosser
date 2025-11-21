@@ -1,7 +1,7 @@
 <template>
     <div v-if="posts">
         <div class="p-2 md:p-6">
-            <div class="text-4xl md:text-6xl heading mb-6">Latest posts</div>
+            <div class="text-4xl md:text-6xl mb-6">Latest posts</div>
             <div class="grid grid-cols-1 md:grid-cols-2 p-2 md:p-6 gap-6">
                 <div v-for="post in posts" :key="post._path"
                     class="h-auto rounded-xl transition-all duration-300 hover:translate-y-1 hover:shadow-xl hover:cursor-pointer p-4"

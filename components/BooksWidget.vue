@@ -1,7 +1,7 @@
 <template>
   
   <div v-if="props.books">
-        <div class="p-2 md:p-6 text-center bg">
+        <div class="p-2 md:p-6 text-center">
           <div class="text-4xl md:text-6xl heading mb-6">Books by Chris Rosser</div>
           <div class="grid grid-cols-1 md:grid-cols-4 gap-6 p-2 md:p-6">
             <div v-for="book in props.books" :key="book.path">
