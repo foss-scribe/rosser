@@ -1,6 +1,14 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  compatibilityDate: "2025-12-19",
+  nitro: {
+    preset: "cloudflare_module",
+    cloudflare: {
+      deployConfig: true,
+      nodeCompat: true
+    }
+  },
   ssr: false,
   app: {
     head: {

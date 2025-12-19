@@ -1,0 +1,31 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "rosser",
+  "main": "./.output/server/index.mjs",
+  "compatibility_date": "2025-12-19",
+  "assets": {
+    "directory": "./.output/public/",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "5ca3559f-3524-4e5e-ada7-b5b81eca5c80"
+    }
+  ],
+  "vars": {
+    "NUXT_PUBLIC_UMAMI_HOST": "https://us.umami.is/script.js",
+    "NUXT_PUBLIC_UMAMI_ID": "5a9ba10a-7814-41e2-a7b8-538b024dec5b"
+  },
+  "env": {
+    "preview": {
+      "vars": {
+        "NUXT_PUBLIC_UMAMI_HOST": "https://us.umami.is/script.js",
+        "NUXT_PUBLIC_UMAMI_ID": "5a9ba10a-7814-41e2-a7b8-538b024dec5b"
+      }
+    }
+  }
+}
