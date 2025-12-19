@@ -9,18 +9,18 @@
     </div>
     <Meander />
 
-    <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="grid grid-cols-1 lg:grid-cols-2">
         
         <PostsWidget />
         <BooksWidget v-if="books" :books="books" />
     </div>
 
-    <div class="grid grid-cols-12 gap-6 p-2 md:p-12">
-        <div class="col-span-12 md:col-span-6">
+    <div class="grid grid-cols-12  gap-6 p-2 md:p-12">
+        <div class="col-span-12 lg:col-span-6">
             <CurrentlyWritingWidget class="mb-6" />
             <CurrentlyReadingWidget />
         </div>
-        <div class="col-span-12 md:col-span-6">
+        <div class="col-span-12 lg:col-span-6">
             <div class="border-2 border-md rounded-md p-2 md:p-12">
                 <ContentRenderer v-if="doc" :value="doc" />
             </div>

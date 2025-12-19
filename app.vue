@@ -1,5 +1,5 @@
 <template>
-  <main class="container mx-auto px-4 xl:px-24">
+  <main class="lg:container mx-auto px-2 xl:px-24">
     <SiteNav />
     <BreadCrumbs />
     <NuxtPage />
