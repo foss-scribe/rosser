@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer footer-center  bg-base-200 p-10">
+  <footer class="footer footer-center p-10">
     <aside>
       <img src="~/assets/images/logo.webp" alt="Chris Rosser Logo" width="64" />
       <p class="font-bold">

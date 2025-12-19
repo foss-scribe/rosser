@@ -1,5 +1,5 @@
 <template>
-    <ul class="text-xl text-primary list-disc ml-12 mb-2">
+    <ul class="text-xl list-disc ml-12 mb-2">
       <slot />
     </ul>
   </template>

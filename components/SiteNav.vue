@@ -1,23 +1,23 @@
 <template>
 
-<div class="navbar bg-base-100">
+<div class="navbar">
   <div class="flex-none">
     <button class="btn btn-square btn-ghost">
         <NuxtLink to="/">
-            <img src="~/assets/images/logo.webp" alt="Image" height="50" />
+            <img src="~/assets/images/logo.webp" alt="Image" />
         </NuxtLink>
         
     </button>
   </div>
-  <div class="flex-1">
-    <div class="flex-none hidden md:block">
-        <NuxtLink to="/books" class="btn btn-ghost text-xl hover:bg-accent">Books</NuxtLink>
-        <NuxtLink to="/worlds" class="btn btn-ghost text-xl hover:bg-accent">Worlds</NuxtLink>
-        <NuxtLink to="/blog" class="btn btn-ghost text-xl hover:bg-accent">Blog</NuxtLink>
-        <NuxtLink to="/about" class="btn btn-ghost text-xl hover:bg-accent">About</NuxtLink>
-        <NuxtLink to="/reading" class="btn btn-ghost text-xl hover:bg-accent">Reading List</NuxtLink>
-        <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl hover:bg-accent">Medium</NuxtLink>
-        <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost text-xl hover:bg-accent  ">Substack</NuxtLink>
+  <div class="flex-none">
+    <div class="menu menu-horizontal hidden md:block uppercase">
+        <NuxtLink to="/books" class="btn btn-ghost lg:text-xl">Books</NuxtLink>
+        <NuxtLink to="/worlds" class="btn btn-ghost lg:text-xl">Worlds</NuxtLink>
+        <NuxtLink to="/blog" class="btn btn-ghost lg:text-xl">Blog</NuxtLink>
+        <NuxtLink to="/about" class="btn btn-ghost lg:text-xl">About</NuxtLink>
+        <NuxtLink to="/reading" class="btn btn-ghost lg:text-xl">Reading List</NuxtLink>
+        <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost lg:text-xl">Medium</NuxtLink>
+        <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost lg:text-xl">Substack</NuxtLink>
     </div>
   </div>
   <div class="flex-none visible md:hidden">
@@ -65,10 +65,3 @@ watch(
 );
 
 </script>
-
-<style scoped>
-a:link, a:visited {
-    color: white;
-    text-decoration: none;
-}
-</style>

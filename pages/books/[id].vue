@@ -61,7 +61,6 @@ const route = useRoute()
 const { data: doc } = await useAsyncData(route.path, () => {
     return queryCollection('books').path(route.path).first()
 })
-console.log(doc.value)
 
 // function getIconClass(icon) {
 //     return `${icon}`

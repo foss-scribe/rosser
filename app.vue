@@ -1,8 +1,9 @@
 <template>
-  <main class="flex flex-col">
+  <main class="lg:container mx-auto px-2 xl:px-24">
     <SiteNav />
     <BreadCrumbs />
     <NuxtPage />
+    <Meander />
     <SiteFooter />
   </main>
 </template>
