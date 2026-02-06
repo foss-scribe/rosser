@@ -40,8 +40,10 @@ export default defineNuxtConfig({
       '@nuxthub/core',
       'nuxt-umami'],
   umami: {
-    id: "a235a069-e115-4729-b868-a38dd310ee95",
-    host: "https://my-umami.xyz", 
+    id: "5a9ba10a-7814-41e2-a7b8-538b024dec5b",
+    host: "https://cloud.umami.is",
+    autoTrack: true,
+    ignoreLocalhost: true
   },
   routeRules: {
     '/posts/2018/08/11/review-omnioutliner/': { redirect: 'https://chrisrosser.medium.com/omnioutliner-review-68bd3b1e5735' },
