@@ -3,7 +3,7 @@ title: About Chris Rosser
 head:
     title: "Chris Rosser | About"
     description: "About Chris Rosser, author, technical writer and developer living in Melbourne, Australia"
-date: 2026-01-19
+date: 2026-02-07
 ---
 
 I wrote my first fantasy story when I was seven or eight years old—nearly forty years ago. The details are hazy, but the impulse is not. It was inspired by the first computer game I ever played, and it set a direction that has shaped my creative, personal, and professional life ever since. Whether writing was something innate or something learned is difficult to say; what matters is that it has remained a constant.
