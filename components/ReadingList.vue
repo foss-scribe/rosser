@@ -8,8 +8,11 @@
     
     <section v-if="readingList" class="p-2 md:p-12">
 
+        <input v-model="searchString" type="text" placeholder="Search by title or author" class="input input-bordered w-full mb-6" @keyup="filterBooks(readingList.meta.books, searchString)" />
+        {{ filterBooks(readingList.meta.books, searchString).length }} books.
+
             <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
-                <div v-for="book in sortBooks(readingList.meta.books)" class="card bg-base-100 shadow-xl">
+                <div v-for="book in sortBooks(filterBooks(readingList.meta.books, searchString))" class="card bg-base-100 shadow-xl">
                     <NuxtLink :to="book.medium == 'audiobook' ? book.apple : book.amazon" target="_blank">
                         
                     <figure v-if="book.cover" class="h-auto static">
@@ -54,6 +57,8 @@ const { data: readingList } = await useAsyncData('readingList', () => {
     .first()
 })
 
+const searchString = ref('');
+
 function sortBooks(data) {
     return data.sort((a, b) => {
         return a.status.toLowerCase().localeCompare(b.status.toLowerCase()) || a.author_sort.toLowerCase().localeCompare(b.author_sort.toLowerCase()) || a.published - b.published || a.title.toLowerCase().localeCompare(b.title.toLowerCase()) ;
@@ -71,6 +76,15 @@ function getBadgeClass(status) {
     default:
         return 'badge-danger';
    }
+}
+
+function filterBooks(books, search) {
+    console.log('Filtering books with search term:', search);
+    if (!search) return books;
+    const lowerSearch = search.toLowerCase();
+    return books.filter(book => 
+        book.title.toLowerCase().includes(lowerSearch) ||        book.author.toLowerCase().includes(lowerSearch)
+    );
 }
 
 useHead({

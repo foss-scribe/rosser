@@ -12,12 +12,12 @@
   <div class="flex-none">
     <div class="menu menu-horizontal hidden md:block uppercase">
         <NuxtLink to="/books" class="btn btn-ghost lg:text-xl">Books</NuxtLink>
-        <NuxtLink to="/worlds" class="btn btn-ghost lg:text-xl">Worlds</NuxtLink>
+        <!-- <NuxtLink to="/worlds" class="btn btn-ghost lg:text-xl">Worlds</NuxtLink> -->
         <NuxtLink to="/blog" class="btn btn-ghost lg:text-xl">Blog</NuxtLink>
         <NuxtLink to="/about" class="btn btn-ghost lg:text-xl">About</NuxtLink>
         <NuxtLink to="/reading" class="btn btn-ghost lg:text-xl">Reading List</NuxtLink>
-        <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost lg:text-xl">Medium</NuxtLink>
-        <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost lg:text-xl">Substack</NuxtLink>
+        <!-- <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost lg:text-xl">Medium</NuxtLink> -->
+        <!-- <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost lg:text-xl">Substack</NuxtLink> -->
     </div>
   </div>
   <div class="flex-none visible md:hidden">
@@ -41,12 +41,12 @@
     <div class="flex flex-col">
         <NuxtLink to="/" class="btn btn-ghost text-xl">Home</NuxtLink>
         <NuxtLink to="/books" class="btn btn-ghost text-xl">Books</NuxtLink>
-        <NuxtLink to="/worlds" class="btn btn-ghost text-xl">Worlds</NuxtLink>
+        <!-- <NuxtLink to="/worlds" class="btn btn-ghost text-xl">Worlds</NuxtLink> -->
         <NuxtLink to="/blog" class="btn btn-ghost text-xl">Blog</NuxtLink>
         <NuxtLink to="/about" class="btn btn-ghost text-xl">About</NuxtLink>     
         <NuxtLink to="/reading" class="btn btn-ghost text-xl">Reading List</NuxtLink>
-        <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink>
-        <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost text-xl">Substack</NuxtLink>
+        <!-- <NuxtLink to="https://medium.com/@chrisrosser" target="_blank" class="btn btn-ghost text-xl">Medium</NuxtLink> -->
+        <!-- <NuxtLink to="https://chrisrosser.substack.com" target="_blank" class="btn btn-ghost text-xl">Substack</NuxtLink> -->
     </div>
 </div>
 
