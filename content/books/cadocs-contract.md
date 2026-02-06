@@ -35,10 +35,9 @@ buy_links:
     -
         label: Kobo
         url: https://www.kobo.com/en/ebook/cadoc-s-contract
-        
     -
-        label: Barnes & Noble
-        url: http://www.barnesandnoble.com/s/2940156568284
+        label: ePUB
+        url: https://chrisrosser.gumroad.com/l/cadocs-contract
         
 cta:
     title: "Get your copy now"
