@@ -8,26 +8,24 @@
     
     <section v-if="readingList" class="p-2 md:p-12">
 
-        <input v-model="searchString" type="text" placeholder="Search by title, author or series" class="input input-bordered w-full mb-6" @keyup="filterBooks(readingList.meta.books, searchString)" />
-
-
-        {{ filterBooks(readingList.items, searchString).length }} books.
+        <input v-model="searchString" type="text" placeholder="Search by title or author" class="input input-bordered w-full mb-6" @keyup="filterBooks(readingList.meta.books, searchString)" />
+        {{ filterBooks(readingList.meta.books, searchString).length }} books.
 
             <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
-                <div v-for="book in sortBooks(filterBooks(readingList.items, searchString))" class="card bg-base-100 shadow-xl">
-                    <NuxtLink :to="book.medium == 'audiobook' ? book.linkApple : book.linkAmazon" target="_blank">
+                <div v-for="book in sortBooks(filterBooks(readingList.meta.books, searchString))" class="card bg-base-100 shadow-xl">
+                    <NuxtLink :to="book.medium == 'audiobook' ? book.apple : book.amazon" target="_blank">
                         
                     <figure v-if="book.cover" class="h-auto static">
                         <div class="absolute bottom-0 right-0 rounded-md">
                             <div :class="`badge ${getBadgeClass(book.status)}`">
                                 <span v-if="book.status == 'read'">Read</span>
-                                <span v-if="book.status == 'reading'">Reading now</span>
-                                <span v-if="book.status == 'to read'">To read</span>
-                                <span v-if="book.status == 'did not finish'">Did not finish</span>
+                                <span v-if="book.status == 'currently-reading'">Reading now</span>
+                                <span v-if="book.status == 'to-read'">To read</span>
+                                <span v-if="book.status == 'Did not finish'">Did not finish</span>
                             </div>
                             
                         </div>
-                        <progress v-if="book.status == 'reading'"  class="progress progress-primary w-full" :value="book.progress" max="100"></progress>
+                        <progress v-if="book.status == 'currently-reading'"  class="progress progress-primary w-full" :value="book.progress" max="100"></progress>
                         <img
                             :src="book.cover"
                             :alt="`${book.title} book cover`"
@@ -41,7 +39,7 @@
                                 <span v-if="book.status == 'read'">Read</span>
                                 <span v-if="book.status == 'currently-reading'">Reading now</span>
                                 <span v-if="book.status == 'to-read'">To read</span>
-                                <span v-if="book.status == 'did not finish'">Did not finish</span>
+                                <span v-if="book.status == 'Did not finish'">Did not finish</span>
                             </div>
                         
                     </div>
@@ -49,28 +47,21 @@
                 </div>
             </div>
     </section>
-    <section v-else class="p-2 md:p-12">
-        <p class="text-center">Loading reading list...</p>
-        <span class="loading loading-spinner loading-lg"></span>
-    </section>
 </template>
 
 <script setup>
 // get all books
-import PocketBase from 'pocketbase';
-
-const pb = new PocketBase('https://pb-crnet.de1.53675094.xyz');
-
-const readingList = await pb.collection('books').getList(1, 999,{
-    expand: 'authors    '
-});
+const { data: readingList } = await useAsyncData('readingList', () => {
+  return queryCollection('readingList')
+    .order('title', 'ASC')
+    .first()
+})
 
 const searchString = ref('');
 
 function sortBooks(data) {
     return data.sort((a, b) => {
-        return a.expand.authors[0].lastName.toLowerCase().localeCompare(b.expand.authors[0].lastName.toLowerCase()) || 
-        a.published - b.published || a.title.toLowerCase().localeCompare(b.title.toLowerCase()) ;
+        return a.status.toLowerCase().localeCompare(b.status.toLowerCase()) || a.author_sort.toLowerCase().localeCompare(b.author_sort.toLowerCase()) || a.published - b.published || a.title.toLowerCase().localeCompare(b.title.toLowerCase()) ;
     })
 }
 
@@ -78,9 +69,9 @@ function getBadgeClass(status) {
    switch(status) {
     case 'read':
         return 'badge-success';
-    case 'reading':
+    case 'currently-reading':
         return 'badge-warning';
-    case 'to read':
+    case 'to-read':
         return 'badge-info';
     default:
         return 'badge-danger';
@@ -92,7 +83,7 @@ function filterBooks(books, search) {
     if (!search) return books;
     const lowerSearch = search.toLowerCase();
     return books.filter(book => 
-        book.title.toLowerCase().includes(lowerSearch) ||   book.expand.authors[0].lastName.toLowerCase().includes(lowerSearch) || book.series.toLowerCase().includes(lowerSearch)
+        book.title.toLowerCase().includes(lowerSearch) ||        book.author.toLowerCase().includes(lowerSearch)
     );
 }
 
