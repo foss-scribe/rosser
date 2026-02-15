@@ -8,13 +8,18 @@
     
     <section v-if="readingList" class="p-2 md:p-12">
 
-        <input v-model="searchString" type="text" placeholder="Search by title, author or series" class="input input-bordered w-full mb-6" @keyup="filterBooks(readingList.meta.books, searchString)" />
+        <button class="btn btn-ghost mb-6" @click="() => {searchStatus = null; searchString = null}">Show all</button>
+        <button class="btn btn-ghost mb-6" @click="searchStatus = 'reading'">Reading</button>
+        <button class="btn btn-ghost mb-6" @click="searchStatus = 'read'">Read</button>
+        <button class="btn btn-ghost mb-6" @click="searchStatus = 'to read'">To read</button>
+        <button class="btn btn-ghost mb-6" @click="searchStatus = 'did not finish'">Did not finish</button>
 
+        <input v-model="searchString" type="text" placeholder="Search by title, author or series" class="input input-bordered w-full mb-6" @keyup="filterBooks(readingList.meta.books, searchString, searchStatus)" />
 
-        {{ filterBooks(readingList.items, searchString).length }} books.
+        {{ filterBooks(readingList.items, searchString, searchStatus).length }} books.
 
             <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
-                <div v-for="book in sortBooks(filterBooks(readingList.items, searchString))" class="card bg-base-100 shadow-xl">
+                <div v-for="book in sortBooks(filterBooks(readingList.items, searchString, searchStatus))" class="card bg-base-100 shadow-xl">
                     <NuxtLink :to="book.medium == 'audiobook' ? book.linkApple : book.linkAmazon" target="_blank">
                         
                     <figure v-if="book.cover" class="h-auto static">
@@ -56,7 +61,6 @@
 </template>
 
 <script setup>
-// get all books
 import PocketBase from 'pocketbase';
 
 const pb = new PocketBase('https://pb-crnet.de1.53675094.xyz');
@@ -66,6 +70,7 @@ const readingList = await pb.collection('books').getList(1, 999,{
 });
 
 const searchString = ref('');
+const searchStatus = ref('');
 
 function sortBooks(data) {
     return data.sort((a, b) => {
@@ -87,12 +92,12 @@ function getBadgeClass(status) {
    }
 }
 
-function filterBooks(books, search) {
-    console.log('Filtering books with search term:', search);
-    if (!search) return books;
-    const lowerSearch = search.toLowerCase();
+function filterBooks(books, searchString, searchStatus) {
+    if (!searchString && !searchStatus) return books;
+    const lowerSearch = searchString ? searchString.toLowerCase() : '';
     return books.filter(book => 
-        book.title.toLowerCase().includes(lowerSearch) ||   book.expand.authors[0].lastName.toLowerCase().includes(lowerSearch) || book.series.toLowerCase().includes(lowerSearch)
+        (!searchString || book.title.toLowerCase().includes(lowerSearch) || book.expand.authors[0].lastName.toLowerCase().includes(lowerSearch) || book.series.toLowerCase().includes(lowerSearch)) &&
+        (!searchStatus || book.status === searchStatus)
     );
 }
 
