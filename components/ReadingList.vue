@@ -16,7 +16,7 @@
 
         <input v-model="searchString" type="text" placeholder="Search by title, author or series" class="input input-bordered w-full mb-6" @keyup="filterBooks(readingList.meta.books, searchString, searchStatus)" />
 
-        {{ filterBooks(readingList.items, searchString, searchStatus).length }} books.
+        {{ filterBooks(readingList.items, searchString, searchStatus).length }} book<span v-if="filterBooks(readingList.items, searchString, searchStatus).length !== 1">s</span>.
 
             <div class="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-4 items-top">
                 <div v-for="book in sortBooks(filterBooks(readingList.items, searchString, searchStatus))" class="card bg-base-100 shadow-xl">
