@@ -15,7 +15,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/robots": "^5.1.0",
     "@nuxtjs/sitemap": "^7.0.0",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/vite": "^4.2.1",
     "autoprefixer": "^10.4.21",
     "better-sqlite3": "^12.2.0",
     "nuxt-seo-utils": "^6.0.4",
@@ -23,7 +23,7 @@
     "remark-gfm": "^4.0.0",
     "remark-reading-time": "^2.0.1",
     "remark-smartypants": "^3.0.2",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
     "@nuxthub/core": "^0.10.3",
